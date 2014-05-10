@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da0c15f0_df7193e2",
+        "filename": "cmhw/org/cyanogenmod/hardware/DisplayColorCalibration.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2014-05-10T18:58:33Z",
+      "side": 1,
+      "message": "Could also change this to 85-90% of the max to allow adjustment to the other direction but it would be away from overall screen brightness.",
+      "revId": "f3ec81436e8b809ca77eb160fe2c4a0c6a8366d7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
