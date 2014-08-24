@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_07a45955",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 179,
+      "author": {
+        "id": 8217
+      },
+      "writtenOn": "2014-08-24T06:18:18Z",
+      "side": 0,
+      "message": "I\u0027d prefer to keep this, even tho it works as a hit or miss.",
+      "revId": "7322035a326a719b00e0270b16b58a26d44cec83",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
