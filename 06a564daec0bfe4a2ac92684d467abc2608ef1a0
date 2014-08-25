@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_a4bbe00d",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 179,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-08-25T07:25:24Z",
+      "side": 0,
+      "message": "So.. why is this being moved for no reason?",
+      "revId": "06a564daec0bfe4a2ac92684d467abc2608ef1a0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
