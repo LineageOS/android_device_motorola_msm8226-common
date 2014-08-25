@@ -16,6 +16,23 @@
       "revId": "06a564daec0bfe4a2ac92684d467abc2608ef1a0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_045e14e9",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 179,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2014-08-25T07:55:41Z",
+      "side": 0,
+      "message": "Because this is the only place where it\u0027s used.\nhttps://github.com/CyanogenMod/android_system_vold/blob/cm-10.2/Android.mk#L23",
+      "revId": "06a564daec0bfe4a2ac92684d467abc2608ef1a0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
