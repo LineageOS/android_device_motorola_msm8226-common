@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_b0b66f3b",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-09-02T20:16:36Z",
+      "side": 1,
+      "message": "Unnecessarily making this a variable.",
+      "revId": "5a64851c844ee3e00d3a32e50e781904e57e9987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_70acd7ed",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 179,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-09-02T20:16:36Z",
+      "side": 1,
+      "message": "Unnecessary flag movement. (Also ruins alphabetization)",
+      "revId": "5a64851c844ee3e00d3a32e50e781904e57e9987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
