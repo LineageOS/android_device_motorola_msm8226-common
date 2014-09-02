@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "7a1b2928_756fa992",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2014-09-02T04:37:39Z",
+      "side": 1,
+      "message": "There\u0027s no need to define this flag to false. It\u0027s only checked if it\u0027s true.",
+      "revId": "be90993824a655a90a9b6a2b289b8f9865f0da09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a1b2928_f53bb99a",
         "filename": "BoardConfigCommon.mk",
         "patchSetId": 1
