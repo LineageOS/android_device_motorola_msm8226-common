@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_75232906",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 178,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-09-02T14:20:00Z",
+      "side": 1,
+      "message": "This probably shouldn\u0027t be here, I think the kernel is missing bits for this.",
+      "revId": "53c855902e5724b78b5fcd22967563d47954b8d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
