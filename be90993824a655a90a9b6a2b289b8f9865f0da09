@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_f53bb99a",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 8217
+      },
+      "writtenOn": "2014-09-02T04:16:56Z",
+      "side": 1,
+      "message": "Why\u0027d you move all of these lines down?",
+      "revId": "be90993824a655a90a9b6a2b289b8f9865f0da09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
