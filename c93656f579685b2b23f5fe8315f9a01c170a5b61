@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_1a301656",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2014-09-07T19:55:31Z",
+      "side": 1,
+      "message": "msm8226-common",
+      "revId": "c93656f579685b2b23f5fe8315f9a01c170a5b61",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
