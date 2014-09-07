@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_baf8027e",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2014-09-07T19:49:31Z",
+      "side": 1,
+      "message": "Remove that redundant flag in that case.",
+      "revId": "2685d0e25ef06337de1d017ee90a3af8e8f93324",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
