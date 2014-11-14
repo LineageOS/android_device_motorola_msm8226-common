@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a122d0e_86034f0f",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-11-14T16:34:48Z",
+      "side": 1,
+      "message": "This isn\u0027t really a motorola item. I\u0027d place this in a separate location.",
+      "revId": "bf44708ad24849560f1984436e98f73e2bcd8614",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
