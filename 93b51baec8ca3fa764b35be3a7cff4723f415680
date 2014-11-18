@@ -104,6 +104,24 @@
       "revId": "93b51baec8ca3fa764b35be3a7cff4723f415680",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "faac7902_35dd5a71",
+        "filename": "msm8226.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 222,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-11-18T15:20:51Z",
+      "side": 1,
+      "message": "whoops, this comment is meant for the line below, dhcpcd.conf should go at the top of this list.",
+      "parentUuid": "faac7902_55b61e3e",
+      "revId": "93b51baec8ca3fa764b35be3a7cff4723f415680",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
