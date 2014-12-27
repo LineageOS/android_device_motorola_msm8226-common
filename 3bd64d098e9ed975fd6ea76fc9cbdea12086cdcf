@@ -16,6 +16,24 @@
       "revId": "3bd64d098e9ed975fd6ea76fc9cbdea12086cdcf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_7ba4cf56",
+        "filename": "msm8226.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 220,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-12-27T09:58:15Z",
+      "side": 0,
+      "message": "Doh, hostapd_default.conf isn\u0027t a target that exists outside this tree, so that\u0027s why I thought it was now not necessary. Better add a patchset to address this...",
+      "parentUuid": "7aa08908_fb1d5fbe",
+      "revId": "3bd64d098e9ed975fd6ea76fc9cbdea12086cdcf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
