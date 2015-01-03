@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_66e6e4b5",
+        "filename": "configs/mixer_paths.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 524,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-01-03T21:14:08Z",
+      "side": 1,
+      "message": "Entry should probably go here.",
+      "revId": "f215afe216c0fad38f630df8c8c5d288cffb65c0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_a6ee0c89",
+        "filename": "configs/mixer_paths.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 586,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-01-03T21:14:08Z",
+      "side": 1,
+      "message": "You need the voip-main-mic-comm and voip-headset-mic-comm paths as well.",
+      "revId": "f215afe216c0fad38f630df8c8c5d288cffb65c0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
