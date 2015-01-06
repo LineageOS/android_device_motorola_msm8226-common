@@ -52,6 +52,24 @@
       "revId": "99f5310917e3bdae1cfb2e2d4e59810f37e50bda",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_20bcb904",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 974,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-01-06T11:36:33Z",
+      "side": 1,
+      "message": "https://github.com/KonstaT/android_kernel_motorola_msm8226",
+      "parentUuid": "7aa08908_e0c11182",
+      "revId": "99f5310917e3bdae1cfb2e2d4e59810f37e50bda",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
