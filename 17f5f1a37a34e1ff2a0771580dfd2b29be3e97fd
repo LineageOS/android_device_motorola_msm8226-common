@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_1b9db265",
+        "filename": "configs/audio_policy.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2015-01-06T15:44:03Z",
+      "side": 1,
+      "message": "actually this should be 44100|48000",
+      "revId": "17f5f1a37a34e1ff2a0771580dfd2b29be3e97fd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
