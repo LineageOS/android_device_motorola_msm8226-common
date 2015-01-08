@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "7aa08908_6fa4e9a5",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 602,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-01-08T13:04:44Z",
+      "side": 0,
+      "message": "No, this is intended to be ril-daemon again.",
+      "parentUuid": "7aa08908_e91299b3",
+      "revId": "a30c942c1c7e76921d3f0aed37f0f575e706502e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7aa08908_8945d5b4",
         "filename": "rootdir/etc/init.qcom.rc",
         "patchSetId": 1
@@ -47,6 +65,24 @@
       "writtenOn": "2015-01-08T00:42:50Z",
       "side": 0,
       "message": "No such service. Originally runs qcom-c_main-sh which should start second rild service.",
+      "revId": "a30c942c1c7e76921d3f0aed37f0f575e706502e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_0f9d6559",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 607,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-01-08T13:04:44Z",
+      "side": 0,
+      "message": "This was an oversight on my part.",
+      "parentUuid": "7aa08908_8945d5b4",
       "revId": "a30c942c1c7e76921d3f0aed37f0f575e706502e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
