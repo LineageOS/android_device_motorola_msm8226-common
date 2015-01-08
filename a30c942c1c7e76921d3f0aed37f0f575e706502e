@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_a94a51c3",
+        "filename": "include/device_perms.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-01-08T00:42:50Z",
+      "side": 0,
+      "message": "These permissions not needed at all? It wasn\u0027t correct for second rild before and it still worked?",
+      "revId": "a30c942c1c7e76921d3f0aed37f0f575e706502e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_e91299b3",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 602,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-01-08T00:42:50Z",
+      "side": 0,
+      "message": "Should be mmi-ril-daemon? ril-daemon already always stopped (line 79). Stopping/restarting rild services was recently removed in CAF either way. https://www.codeaurora.org/cgit/quic/la/device/qcom/common/commit/?h\u003dLA.BF.1.1.2_rb1.10\u0026id\u003dc8579f7b37c5cc322d0f768452a91ccb19f4c33d",
+      "revId": "a30c942c1c7e76921d3f0aed37f0f575e706502e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_8945d5b4",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 607,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-01-08T00:42:50Z",
+      "side": 0,
+      "message": "No such service. Originally runs qcom-c_main-sh which should start second rild service.",
+      "revId": "a30c942c1c7e76921d3f0aed37f0f575e706502e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
