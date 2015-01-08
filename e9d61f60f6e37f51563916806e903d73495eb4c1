@@ -16,6 +16,24 @@
       "revId": "e9d61f60f6e37f51563916806e903d73495eb4c1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_8c9b2372",
+        "filename": "system_prop.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 8217
+      },
+      "writtenOn": "2015-01-08T07:30:31Z",
+      "side": 1,
+      "message": "https://www.codeaurora.org/cgit/quic/la/platform/vendor/qcom/msm8226/commit/?h\u003dLA.BF.1.1.1_rb1.1\u0026id\u003d358c60ececc2571ec42c852d8979e403b5a4461b\n\nI thought caf disabled this?",
+      "parentUuid": "7aa08908_49500d5f",
+      "revId": "e9d61f60f6e37f51563916806e903d73495eb4c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
