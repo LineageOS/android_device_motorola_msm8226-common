@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_49500d5f",
+        "filename": "system_prop.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-01-08T01:56:48Z",
+      "side": 1,
+      "message": "c\u0026p fail, should lose trailing \\",
+      "revId": "e9d61f60f6e37f51563916806e903d73495eb4c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
