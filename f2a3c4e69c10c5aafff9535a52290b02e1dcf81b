@@ -16,6 +16,24 @@
       "revId": "f2a3c4e69c10c5aafff9535a52290b02e1dcf81b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_d53ace97",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-01-09T08:53:04Z",
+      "side": 1,
+      "message": "Separate label is probably a good idea.",
+      "parentUuid": "7aa08908_152456ad",
+      "revId": "f2a3c4e69c10c5aafff9535a52290b02e1dcf81b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
