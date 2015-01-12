@@ -2,6 +2,57 @@
   "comments": [
     {
       "key": {
+        "uuid": "7aa08908_3cafb695",
+        "filename": "msm8226.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 11089
+      },
+      "writtenOn": "2015-01-12T08:31:30Z",
+      "side": 0,
+      "message": "Building by default",
+      "revId": "a047ad673f4ca07c4dfe99c862065bb011a816ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_9c96aa4a",
+        "filename": "msm8226.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 11089
+      },
+      "writtenOn": "2015-01-12T08:31:30Z",
+      "side": 0,
+      "message": "Building by default",
+      "revId": "a047ad673f4ca07c4dfe99c862065bb011a816ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_7c913e52",
+        "filename": "msm8226.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 11089
+      },
+      "writtenOn": "2015-01-12T08:31:30Z",
+      "side": 0,
+      "message": "Building by default",
+      "revId": "a047ad673f4ca07c4dfe99c862065bb011a816ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7aa08908_61a07544",
         "filename": "msm8226.mk",
         "patchSetId": 1
@@ -13,6 +64,23 @@
       "writtenOn": "2015-01-12T02:36:48Z",
       "side": 0,
       "message": "Torch overlays can go too.",
+      "revId": "a047ad673f4ca07c4dfe99c862065bb011a816ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_bc9ba671",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 559,
+      "author": {
+        "id": 11089
+      },
+      "writtenOn": "2015-01-12T08:31:30Z",
+      "side": 0,
+      "message": "Why removing this ? Is wifi tethering working without it ?",
       "revId": "a047ad673f4ca07c4dfe99c862065bb011a816ce",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
