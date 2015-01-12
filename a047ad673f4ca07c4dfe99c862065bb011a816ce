@@ -84,6 +84,24 @@
       "revId": "a047ad673f4ca07c4dfe99c862065bb011a816ce",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_3ca33651",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 559,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-01-12T12:11:35Z",
+      "side": 0,
+      "message": "hostapd isn\u0027t a service, it\u0027s invoked by the wifi framework.",
+      "parentUuid": "7aa08908_bc9ba671",
+      "revId": "a047ad673f4ca07c4dfe99c862065bb011a816ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
