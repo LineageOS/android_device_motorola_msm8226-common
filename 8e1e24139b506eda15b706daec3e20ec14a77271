@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_0199b11f",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-01-12T02:36:48Z",
+      "side": 1,
+      "message": "This can go.",
+      "revId": "8e1e24139b506eda15b706daec3e20ec14a77271",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_a18a5dbd",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-01-12T02:36:48Z",
+      "side": 1,
+      "message": "This can go.",
+      "revId": "8e1e24139b506eda15b706daec3e20ec14a77271",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_41a3b94f",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-01-12T02:36:48Z",
+      "side": 1,
+      "message": "Is this really needed? I never added this for Lollipop and I haven\u0027t noticed anything wrong.",
+      "revId": "8e1e24139b506eda15b706daec3e20ec14a77271",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
