@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fad55976_74d8751e",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-01-24T13:33:00Z",
+      "side": 1,
+      "message": "y u take away my newline between sections D:\n\nAlso do this in on boot with the rest of the sensor permissions.",
+      "revId": "6636637fb975867428597f9bda80a441613f4d3d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
