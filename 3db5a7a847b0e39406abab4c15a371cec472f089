@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fad55976_5892bf58",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 650,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-01-27T09:25:54Z",
+      "side": 1,
+      "message": "Are you sure this is necessary? It\u0027s a oneshot.",
+      "revId": "3db5a7a847b0e39406abab4c15a371cec472f089",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
