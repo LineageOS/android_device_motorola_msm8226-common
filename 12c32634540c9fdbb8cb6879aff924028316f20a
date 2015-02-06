@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "bacf61ea_2399a16f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-02-06T14:20:25Z",
+      "side": 1,
+      "message": "Use linebreaks where needed",
+      "revId": "12c32634540c9fdbb8cb6879aff924028316f20a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bacf61ea_83732d4d",
         "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
         "patchSetId": 2
