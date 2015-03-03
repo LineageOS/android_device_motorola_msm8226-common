@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ad45d7e_e15e6a75",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-03-03T09:54:08Z",
+      "side": 1,
+      "message": "Line breaks please, git doesn\u0027t like really long commit messages.",
+      "revId": "c6dc7c293a069a18299db2b8fa914477d5fda591",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
