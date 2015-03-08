@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ad45d7e_e8b91dee",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 5
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-03-08T22:58:16Z",
+      "side": 1,
+      "message": "/sys/devices/platform/kcal_ctrl.0(/.*)? ... should work instead of listing them all.",
+      "revId": "c8d441548e099503ec55edc0f9a61e771739c52f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
