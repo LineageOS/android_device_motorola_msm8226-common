@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ad45d7e_c83099a1",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-03-08T20:00:47Z",
+      "side": 1,
+      "message": "Only new unique file names need to be listed here so this could be cleaned up quite a bit.",
+      "revId": "7e4ad9b63287922e97f9ad41ef262a9b1b2f2b40",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
