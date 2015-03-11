@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7ac969e8_a6fe4603",
+        "filename": "cmhw/org/cyanogenmod/hardware/SunlightEnhancement.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-03-11T07:25:43Z",
+      "side": 1,
+      "message": "I don\u0027t think this path will exist...",
+      "revId": "1ec5d396b5b0ba4f2026d2722ef5cc9e40d0993d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
