@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7ac969e8_e98131fd",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 9
+      },
+      "lineNbr": 471,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-03-12T04:25:22Z",
+      "side": 1,
+      "message": "Alphabetical order, please.",
+      "revId": "af98ecc9103961a51c72574acf26251dc7de8bb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7ac969e8_898cfd36",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 9
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-03-12T04:25:22Z",
+      "side": 1,
+      "message": "/sys/devices/platform/kcal_ctrl.0(/.*)? or /sys/devices/platform/kcal_ctrl.0/kcal.* ... either should work and also be technically correct.",
+      "revId": "af98ecc9103961a51c72574acf26251dc7de8bb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
