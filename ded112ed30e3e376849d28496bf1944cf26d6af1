@@ -34,6 +34,24 @@
       "revId": "ded112ed30e3e376849d28496bf1944cf26d6af1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7ac969e8_cff715f4",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 11
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-03-13T01:04:11Z",
+      "side": 1,
+      "message": "There was also another wildcard I suggested but to think of it again, could just narrow it down to the two nodes we actually need access to (same thing in init.qcom.rc). AFAIK there\u0027s nothing but the RGB calibration that we can hook to with cmhw.",
+      "parentUuid": "7ac969e8_2f96a994",
+      "revId": "ded112ed30e3e376849d28496bf1944cf26d6af1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
