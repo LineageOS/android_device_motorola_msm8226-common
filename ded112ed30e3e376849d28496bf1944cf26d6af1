@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7ac969e8_af9a99c3",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 11
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-03-13T00:26:22Z",
+      "side": 1,
+      "message": "This just isn\u0027t right. There\u0027s no such directory as /sys/devices/platform/kcal_ctrl.0/kcal/",
+      "revId": "ded112ed30e3e376849d28496bf1944cf26d6af1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
