@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ac665da_f1163354",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-03-20T05:36:30Z",
+      "side": 1,
+      "message": "Why use a prebuilt if the source built works? Or if you use a prebuilt stock binary, you should also remove the charge_only_mode source code and related bits from the device tree.",
+      "revId": "3f6a68f69ee2a8574bb0e66ba43a5aa31dffaf10",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
