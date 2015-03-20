@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "5ac665da_44414339",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 851,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-03-20T06:19:14Z",
+      "side": 1,
+      "message": "Really? I have \u0027300000 384000 600000 787200 998400 1094400 1190400\u0027 but I\u0027m still with the KitKat kernel, though. I don\u0027t see how it could have changed as the freq table is still the same (https://github.com/CyanogenMod/android_kernel_motorola_msm8226/blob/cm-12.0/arch/arm/boot/dts/msm8226.dtsi#L1065).",
+      "parentUuid": "5ac665da_c42533af",
+      "revId": "c1d6ba9fa2c716e1fbcb33c4d2e5f0ae52d168b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ac665da_d117b752",
         "filename": "rootdir/etc/init.qcom.rc",
         "patchSetId": 2
