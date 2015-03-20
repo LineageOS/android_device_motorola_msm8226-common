@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ac665da_712c03ac",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 851,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-03-20T05:32:17Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this be 1190400 or at least some freq that is actually available?\n\nAlso looks like all of this here is copied from some msm8974(?) device rather than what was originally in stock init.qcom.post_boot.sh for msm8226.",
+      "revId": "c1d6ba9fa2c716e1fbcb33c4d2e5f0ae52d168b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac665da_d117b752",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 858,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-03-20T05:32:17Z",
+      "side": 1,
+      "message": "Same here.",
+      "revId": "c1d6ba9fa2c716e1fbcb33c4d2e5f0ae52d168b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
