@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "5ac665da_443ae3ce",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 851,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-03-20T06:11:05Z",
+      "side": 1,
+      "message": "cat scaling_available_frequencys --\u003e 300000 384000 600000 787200 998400 1094400 1190400",
+      "parentUuid": "5ac665da_c42533af",
+      "revId": "c1d6ba9fa2c716e1fbcb33c4d2e5f0ae52d168b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ac665da_d117b752",
         "filename": "rootdir/etc/init.qcom.rc",
         "patchSetId": 2
