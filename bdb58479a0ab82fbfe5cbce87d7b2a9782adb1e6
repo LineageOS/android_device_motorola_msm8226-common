@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ac665da_92e4010e",
+        "filename": "system_prop.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-04-04T23:21:52Z",
+      "side": 1,
+      "message": "This is no-op in Lollipop. These were changed to reflect a change on frameworks/av side.",
+      "revId": "bdb58479a0ab82fbfe5cbce87d7b2a9782adb1e6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
