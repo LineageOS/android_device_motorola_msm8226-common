@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ac665da_559ef356",
+        "filename": "system_prop.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 8217
+      },
+      "writtenOn": "2015-04-05T11:40:31Z",
+      "side": 1,
+      "message": "#BrokeMyBoot",
+      "revId": "baae4a68eed8e179ca8e983fe59bb8955a30cc35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
