@@ -34,6 +34,23 @@
       "revId": "461d258b3a06fac4a9bc4cba71d1c6b703bbac71",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ac371cc_79418139",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-04-13T18:50:45Z",
+      "side": 1,
+      "message": "Intendation here is actually messed up. Same thing in quite a few other places and not all the comments are in line with frameworks/base either. Someone OCD enough should probably fix these sometime. :P",
+      "revId": "461d258b3a06fac4a9bc4cba71d1c6b703bbac71",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
