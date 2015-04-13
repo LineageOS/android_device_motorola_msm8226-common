@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ac371cc_766d0e32",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-04-13T15:52:12Z",
+      "side": 1,
+      "message": "Unnecessary indentation change.",
+      "revId": "461d258b3a06fac4a9bc4cba71d1c6b703bbac71",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
