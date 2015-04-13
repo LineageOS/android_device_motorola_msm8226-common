@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ac371cc_f649fe8f",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-04-13T18:12:21Z",
+      "side": 1,
+      "message": "This is set to 10 by default.",
+      "revId": "68f4e66f7e8a2010b5828d09811d947eb0cfb8fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ac371cc_d64e8295",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-04-13T18:12:21Z",
+      "side": 1,
+      "message": "This is also set to 10 by default.",
+      "revId": "68f4e66f7e8a2010b5828d09811d947eb0cfb8fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
