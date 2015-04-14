@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ac371cc_59512562",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 571,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-04-14T05:39:42Z",
+      "side": 1,
+      "message": "I need to revisit this part later, this probably breaks encryption on multisim.",
+      "revId": "db85928e7fafcf6f1cc0b6058ce6d271c5e55b8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
