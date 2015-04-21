@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa7ab95a_b874c6fd",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 825,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-04-21T06:32:04Z",
+      "side": 1,
+      "message": "I\u0027m not sure you want this to show mass_storage. Also, you could do this by simply setting the usb config property to mass_storage.",
+      "revId": "b4a552b331d0ceff7e6b41bc0cd5c29283f4dda3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
