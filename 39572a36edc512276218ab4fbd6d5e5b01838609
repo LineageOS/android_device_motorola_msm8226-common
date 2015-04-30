@@ -16,6 +16,24 @@
       "revId": "39572a36edc512276218ab4fbd6d5e5b01838609",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da7fb54a_52b554cb",
+        "filename": "overlay/packages/apps/Dialer/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-04-30T04:56:20Z",
+      "side": 1,
+      "message": "I do. There\u0027s still another set of MCC overlays in dialer package that override this to false in countries where this should not be available. This is also how this is set on other devices (i.e. bacon).",
+      "parentUuid": "da7fb54a_529e3457",
+      "revId": "39572a36edc512276218ab4fbd6d5e5b01838609",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
