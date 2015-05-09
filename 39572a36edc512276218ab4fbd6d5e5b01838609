@@ -34,6 +34,29 @@
       "revId": "39572a36edc512276218ab4fbd6d5e5b01838609",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a89bdaa_a8a71a4e",
+        "filename": "overlay/packages/apps/Dialer/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-05-09T22:44:44Z",
+      "side": 1,
+      "message": "Audio Source set to 1 allow call recording on titan/thea but auido file is null",
+      "range": {
+        "startLine": 19,
+        "startChar": 48,
+        "endLine": 19,
+        "endChar": 49
+      },
+      "revId": "39572a36edc512276218ab4fbd6d5e5b01838609",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
