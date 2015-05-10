@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a89bdaa_2bcf84b1",
+        "filename": "bluetooth/bdroid_buildcfg.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-05-10T07:44:58Z",
+      "side": 1,
+      "message": "Might as well just return Moto G here.",
+      "revId": "efe99d38a1c02e3d2f23a28805cfab184800ce66",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
