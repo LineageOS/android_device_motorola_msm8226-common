@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a89bdaa_c655221e",
+        "filename": "doze/src/com/cyanogenmod/settings/device/MotoDozeService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-05-18T08:36:57Z",
+      "side": 1,
+      "message": "Moved to the line 116",
+      "range": {
+        "startLine": 44,
+        "startChar": 4,
+        "endLine": 44,
+        "endChar": 76
+      },
+      "revId": "98fa2475d774578ff5a788631868d7fd21692193",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a89bdaa_e630660a",
+        "filename": "doze/src/com/cyanogenmod/settings/device/MotoDozeService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-05-18T08:36:57Z",
+      "side": 1,
+      "message": "GESTURE_HAND_WAVE_KEY is enabled by default , so set boolean to true",
+      "range": {
+        "startLine": 50,
+        "startChar": 4,
+        "endLine": 50,
+        "endChar": 52
+      },
+      "revId": "98fa2475d774578ff5a788631868d7fd21692193",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
