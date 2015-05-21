@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a89bdaa_89db26ed",
+        "filename": "doze/src/com/cyanogenmod/settings/device/MotoDozeService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-05-21T09:08:45Z",
+      "side": 1,
+      "message": "This change fixed Pocket Mode",
+      "range": {
+        "startLine": 98,
+        "startChar": 39,
+        "endLine": 98,
+        "endChar": 64
+      },
+      "revId": "428a8b40c0b6c95a34bb29a8a2a5d7d9c1e91ff6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
