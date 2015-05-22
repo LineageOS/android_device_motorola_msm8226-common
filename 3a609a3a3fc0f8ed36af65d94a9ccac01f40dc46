@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a89bdaa_c4819591",
+        "filename": "configs/audio_policy.conf",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-05-22T04:11:59Z",
+      "side": 1,
+      "message": "Adding multichannel device shouldn\u0027t be part of this change.",
+      "revId": "3a609a3a3fc0f8ed36af65d94a9ccac01f40dc46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
