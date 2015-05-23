@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a89bdaa_d57cd822",
+        "filename": "doze/res/xml/gesture_panel.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2015-05-23T23:08:52Z",
+      "side": 1,
+      "message": "is that necessary?",
+      "revId": "2962bf2e6a43445b4e9ac287bbcbe856e3f59dd6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
