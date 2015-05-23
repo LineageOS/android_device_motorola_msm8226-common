@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a89bdaa_f5f55c83",
+        "filename": "doze/src/com/cyanogenmod/settings/device/TouchscreenGestureSettings.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-05-23T23:49:49Z",
+      "side": 1,
+      "message": "Whitespace. !MotoDozeService...",
+      "revId": "c56b38c2adc5182beb78c19889ed5eb431db79dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
