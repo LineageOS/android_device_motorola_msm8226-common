@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a89bdaa_f5c71c43",
+        "filename": "doze/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-05-23T23:30:48Z",
+      "side": 1,
+      "message": "I\u0027d put the category title before the stuff that goes into the category but that\u0027s just me... :P",
+      "revId": "125d2330f46823332b3a17bc1a7d3159df15e551",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a89bdaa_35c26434",
+        "filename": "doze/src/com/cyanogenmod/settings/device/MotoDozeService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-05-23T23:30:48Z",
+      "side": 1,
+      "message": "This can be still remain private.",
+      "revId": "125d2330f46823332b3a17bc1a7d3159df15e551",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a89bdaa_55dd2813",
+        "filename": "doze/src/com/cyanogenmod/settings/device/TouchscreenGestureSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-05-23T23:30:48Z",
+      "side": 1,
+      "message": "Should have 8 char indentation.",
+      "revId": "125d2330f46823332b3a17bc1a7d3159df15e551",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
