@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a89bdaa_b53af434",
+        "filename": "doze/res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-05-24T00:24:25Z",
+      "side": 0,
+      "message": "Unneeded newline removal but whatever. :P",
+      "revId": "428a8b40c0b6c95a34bb29a8a2a5d7d9c1e91ff6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
