@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a89bdaa_e793f1f8",
+        "filename": "wifi/wpa_supplicant_overlay.conf",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-05-26T07:47:23Z",
+      "side": 1,
+      "message": "Likely unused in CM.",
+      "revId": "cbf0b6342d1e256ecc1bd2460d913610f1bf7819",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a89bdaa_27bcf96b",
+        "filename": "wifi/wpa_supplicant_overlay.conf",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-05-26T07:47:23Z",
+      "side": 1,
+      "message": "Quite sure this shouldn\u0027t be here.",
+      "revId": "cbf0b6342d1e256ecc1bd2460d913610f1bf7819",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
