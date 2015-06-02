@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a8ec9b2_7e6ce69c",
+        "filename": "wifi/hostapd_default.conf",
+        "patchSetId": 3
+      },
+      "lineNbr": 882,
+      "author": {
+        "id": 8217
+      },
+      "writtenOn": "2015-06-02T09:37:07Z",
+      "side": 1,
+      "message": "Placebo change",
+      "revId": "6fe2b7647612091d8782c9fb9d3953e1b4bf3132",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
