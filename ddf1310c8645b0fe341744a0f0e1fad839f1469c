@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "da36d5c6_8cb987ef",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 605,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-18T06:02:56Z",
+      "side": 1,
+      "message": "That\u0027s weird, we shouldn\u0027t even be starting mpdecision until the boot is complete.",
+      "parentUuid": "da36d5c6_0ce75713",
+      "revId": "ddf1310c8645b0fe341744a0f0e1fad839f1469c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da36d5c6_2c1dfb0f",
         "filename": "rootdir/etc/init.qcom.rc",
         "patchSetId": 2
@@ -83,6 +101,24 @@
       "side": 1,
       "message": "without that I couldn\u0027t unmount /data.",
       "parentUuid": "da36d5c6_2c1dfb0f",
+      "revId": "ddf1310c8645b0fe341744a0f0e1fad839f1469c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da36d5c6_ccb37f09",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 654,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-18T06:02:56Z",
+      "side": 1,
+      "message": "Not sure why that would make a difference. Changing it to class main would though.",
+      "parentUuid": "da36d5c6_ece12300",
       "revId": "ddf1310c8645b0fe341744a0f0e1fad839f1469c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
