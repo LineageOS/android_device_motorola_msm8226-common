@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "da36d5c6_0ce75713",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 605,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2015-06-18T06:00:39Z",
+      "side": 1,
+      "message": "https://www.codeaurora.org/cgit/quic/la/platform/vendor/qcom/msm8226/commit/?h\u003dLA.BF.1.1.2_rb1.23\u0026id\u003ddc1487b7e8e96c5cde5245e21e5f47a50b6f4f0a",
+      "parentUuid": "da36d5c6_0c203749",
+      "revId": "ddf1310c8645b0fe341744a0f0e1fad839f1469c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da36d5c6_2c1dfb0f",
         "filename": "rootdir/etc/init.qcom.rc",
         "patchSetId": 2
@@ -47,6 +65,24 @@
       "writtenOn": "2015-06-18T05:59:16Z",
       "side": 1,
       "message": "Do you really want to change the group here?",
+      "revId": "ddf1310c8645b0fe341744a0f0e1fad839f1469c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da36d5c6_ece12300",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 654,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2015-06-18T06:00:39Z",
+      "side": 1,
+      "message": "without that I couldn\u0027t unmount /data.",
+      "parentUuid": "da36d5c6_2c1dfb0f",
       "revId": "ddf1310c8645b0fe341744a0f0e1fad839f1469c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
