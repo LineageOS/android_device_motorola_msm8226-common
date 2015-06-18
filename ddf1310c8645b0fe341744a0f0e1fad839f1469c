@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da36d5c6_ec2a032c",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-18T05:59:16Z",
+      "side": 1,
+      "message": "Delete this if you want to disable it.",
+      "revId": "ddf1310c8645b0fe341744a0f0e1fad839f1469c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da36d5c6_0c203749",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 605,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-18T05:59:16Z",
+      "side": 1,
+      "message": "This is a no-op if it\u0027s listed as disabled.",
+      "revId": "ddf1310c8645b0fe341744a0f0e1fad839f1469c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da36d5c6_2c1dfb0f",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 654,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-18T05:59:16Z",
+      "side": 1,
+      "message": "Do you really want to change the group here?",
+      "revId": "ddf1310c8645b0fe341744a0f0e1fad839f1469c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da36d5c6_4c1a2f19",
+        "filename": "sepolicy/vold.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-18T05:59:16Z",
+      "side": 1,
+      "message": "That\u0027s pretty permissive.",
+      "revId": "ddf1310c8645b0fe341744a0f0e1fad839f1469c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
