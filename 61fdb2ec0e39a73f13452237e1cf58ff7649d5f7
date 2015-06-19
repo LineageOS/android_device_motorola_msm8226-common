@@ -70,6 +70,24 @@
       "revId": "61fdb2ec0e39a73f13452237e1cf58ff7649d5f7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da36d5c6_3251d663",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 531,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-19T11:19:10Z",
+      "side": 1,
+      "message": "This was supposed to be given the \"onboot\" parameter. I\u0027m confusing this with hciattach service definition on line 542. config_bluetooth should have had \"onboot\" all along. hciattach should not have any parameters.",
+      "parentUuid": "da36d5c6_b264e649",
+      "revId": "61fdb2ec0e39a73f13452237e1cf58ff7649d5f7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
