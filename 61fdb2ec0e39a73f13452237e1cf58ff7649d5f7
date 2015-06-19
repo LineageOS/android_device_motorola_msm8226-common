@@ -52,6 +52,24 @@
       "revId": "61fdb2ec0e39a73f13452237e1cf58ff7649d5f7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da36d5c6_b264e649",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 531,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-19T11:12:58Z",
+      "side": 1,
+      "message": "Yes, but you\u0027ve changed what this is doing completely. You are now randomizing your BT MAC address and changing some system properties instead of running hci_qcomm_init like you should be.",
+      "parentUuid": "da36d5c6_326ab61b",
+      "revId": "61fdb2ec0e39a73f13452237e1cf58ff7649d5f7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
