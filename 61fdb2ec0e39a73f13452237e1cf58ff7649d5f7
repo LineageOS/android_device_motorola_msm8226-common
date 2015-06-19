@@ -34,6 +34,24 @@
       "revId": "61fdb2ec0e39a73f13452237e1cf58ff7649d5f7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da36d5c6_326ab61b",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 531,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2015-06-19T11:07:44Z",
+      "side": 1,
+      "message": "Yes, without that phone was stuck in restart_framework. I\u0027m not joking XD",
+      "parentUuid": "da36d5c6_9278c2fa",
+      "revId": "61fdb2ec0e39a73f13452237e1cf58ff7649d5f7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
