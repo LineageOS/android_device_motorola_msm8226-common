@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a30ddce_671ab270",
+        "filename": "sepolicy/vold.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2015-06-21T00:31:43Z",
+      "side": 1,
+      "message": "See http://review.cyanogenmod.org/100873 for this.",
+      "revId": "b395fe00a9db9c5e3223539007433c663cceb31d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
