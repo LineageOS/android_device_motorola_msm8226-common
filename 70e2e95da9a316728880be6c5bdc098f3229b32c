@@ -2,6 +2,91 @@
   "comments": [
     {
       "key": {
+        "uuid": "9ff52f3f_ee9e2f53",
+        "filename": "sepolicy/sensord.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-30T09:49:57Z",
+      "side": 1,
+      "message": "Might as well start moving to using the macros, so rw_file_perms",
+      "revId": "70e2e95da9a316728880be6c5bdc098f3229b32c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ff52f3f_ceab6b73",
+        "filename": "sepolicy/sensord.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-30T09:49:57Z",
+      "side": 1,
+      "message": "create_file_perms",
+      "revId": "70e2e95da9a316728880be6c5bdc098f3229b32c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ff52f3f_aea82777",
+        "filename": "sepolicy/sensord.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-30T09:49:57Z",
+      "side": 1,
+      "message": "create_file_perms",
+      "revId": "70e2e95da9a316728880be6c5bdc098f3229b32c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ff52f3f_8eb7a3d9",
+        "filename": "sepolicy/sensord.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-30T09:49:57Z",
+      "side": 1,
+      "message": "create_dir_perms",
+      "revId": "70e2e95da9a316728880be6c5bdc098f3229b32c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ff52f3f_6ebc5fbb",
+        "filename": "sepolicy/sensord.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-30T09:49:57Z",
+      "side": 1,
+      "message": "rw_file_perms",
+      "revId": "70e2e95da9a316728880be6c5bdc098f3229b32c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9ff52f3f_4e0e3be6",
         "filename": "sepolicy/sensord.te",
         "patchSetId": 9
@@ -13,6 +98,41 @@
       "writtenOn": "2015-06-30T04:40:20Z",
       "side": 1,
       "message": "I\u0027m not really sure if I want to ship it like this.\n\nOur sensord binary writes some data to sysfs files:\n\n/sys/devices/virtual/input/input0/* - bma2x2 accelerometer\n\n/sys/devices/virtual/input/input1/* - bma_interrupt\n\n/sys/devices/virtual/input/input2/* - bmg160 gyro sensor\n\n/sys/devices/virtual/input/input3/* bmm050 magnetic sensor",
+      "revId": "70e2e95da9a316728880be6c5bdc098f3229b32c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ff52f3f_2e9d3759",
+        "filename": "sepolicy/sensord.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-30T09:49:57Z",
+      "side": 1,
+      "message": "You probably want to label those as sensor files in some way.",
+      "parentUuid": "9ff52f3f_4e0e3be6",
+      "revId": "70e2e95da9a316728880be6c5bdc098f3229b32c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ff52f3f_2eb657db",
+        "filename": "sepolicy/sensord.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-30T09:49:57Z",
+      "side": 1,
+      "message": "w_dir_perms",
       "revId": "70e2e95da9a316728880be6c5bdc098f3229b32c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
