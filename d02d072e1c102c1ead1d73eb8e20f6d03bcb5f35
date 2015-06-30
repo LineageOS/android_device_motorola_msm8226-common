@@ -40,6 +40,24 @@
       "revId": "d02d072e1c102c1ead1d73eb8e20f6d03bcb5f35",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ff52f3f_9975ab9b",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 11
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-06-30T16:34:03Z",
+      "side": 1,
+      "message": "https://github.com/CyanogenMod/android_device_qcom_sepolicy/blob/cm-12.1/sepolicy.mk#L15\nIt\u0027s already called",
+      "parentUuid": "9ff52f3f_d949f360",
+      "revId": "d02d072e1c102c1ead1d73eb8e20f6d03bcb5f35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
