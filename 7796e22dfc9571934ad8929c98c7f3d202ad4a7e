@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ff52f3f_b9c18f31",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 12
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2015-06-30T22:13:47Z",
+      "side": 1,
+      "message": "I splitted it because of users that are already running CM will need to remove this folder because of previous permissions.",
+      "revId": "7796e22dfc9571934ad8929c98c7f3d202ad4a7e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
