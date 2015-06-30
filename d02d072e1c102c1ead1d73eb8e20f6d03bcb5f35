@@ -58,6 +58,24 @@
       "revId": "d02d072e1c102c1ead1d73eb8e20f6d03bcb5f35",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ff52f3f_596f23c5",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 11
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2015-06-30T16:43:06Z",
+      "side": 1,
+      "message": "It doesn\u0027t matter. I can put ueventd permissions in any .te file",
+      "parentUuid": "9ff52f3f_9975ab9b",
+      "revId": "d02d072e1c102c1ead1d73eb8e20f6d03bcb5f35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
