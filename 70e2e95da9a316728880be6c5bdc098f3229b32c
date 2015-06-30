@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ff52f3f_4e0e3be6",
+        "filename": "sepolicy/sensord.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2015-06-30T04:40:20Z",
+      "side": 1,
+      "message": "I\u0027m not really sure if I want to ship it like this.\n\nOur sensord binary writes some data to sysfs files:\n\n/sys/devices/virtual/input/input0/* - bma2x2 accelerometer\n\n/sys/devices/virtual/input/input1/* - bma_interrupt\n\n/sys/devices/virtual/input/input2/* - bmg160 gyro sensor\n\n/sys/devices/virtual/input/input3/* bmm050 magnetic sensor",
+      "revId": "70e2e95da9a316728880be6c5bdc098f3229b32c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
