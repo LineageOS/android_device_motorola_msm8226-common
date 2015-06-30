@@ -22,6 +22,24 @@
       "revId": "d02d072e1c102c1ead1d73eb8e20f6d03bcb5f35",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ff52f3f_d949f360",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 11
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2015-06-30T16:31:23Z",
+      "side": 1,
+      "message": "type\u003d1400 msg\u003daudit(915441.510:10): avc:  denied  { setattr } for  uid\u003d0 pid\u003d153 comm\u003d\"ueventd\" name\u003d\"bandwidth\" dev\u003d\"sysfs\" ino\u003d19264 scontext\u003du:r:ueventd:s0 tcontext\u003du:object_r:sensors_device:s0 tclass\u003dfile permissive\u003d0\n\nxD",
+      "parentUuid": "9ff52f3f_19407b35",
+      "revId": "d02d072e1c102c1ead1d73eb8e20f6d03bcb5f35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
