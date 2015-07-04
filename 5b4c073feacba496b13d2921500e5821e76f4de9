@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7ffa3b31_12405c35",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 17
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-07-04T04:49:54Z",
+      "side": 1,
+      "message": "input0(/.*)?",
+      "revId": "5b4c073feacba496b13d2921500e5821e76f4de9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7ffa3b31_f23cd0c0",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 17
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-07-04T04:49:54Z",
+      "side": 1,
+      "message": "input3(/.*)?",
+      "revId": "5b4c073feacba496b13d2921500e5821e76f4de9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7ffa3b31_d249d460",
+        "filename": "sepolicy/sensord.te",
+        "patchSetId": 17
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-07-04T04:49:54Z",
+      "side": 1,
+      "message": "write should be part of create_file_perms",
+      "revId": "5b4c073feacba496b13d2921500e5821e76f4de9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7ffa3b31_b246484f",
+        "filename": "sepolicy/sensord.te",
+        "patchSetId": 17
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-07-04T04:49:54Z",
+      "side": 1,
+      "message": "you probably want create_dir_perms, it should include search, add_name, remove_name, etc.",
+      "revId": "5b4c073feacba496b13d2921500e5821e76f4de9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7ffa3b31_92758c9b",
+        "filename": "sepolicy/sysfs_devices_sensors.te",
+        "patchSetId": 17
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-07-04T04:49:54Z",
+      "side": 1,
+      "message": "You can put this in devices.te, or file.te. Are you sure this is a dev_type?",
+      "revId": "5b4c073feacba496b13d2921500e5821e76f4de9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7ffa3b31_727a0089",
+        "filename": "sepolicy/sysfs_devices_sensors.te",
+        "patchSetId": 17
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-07-04T04:49:54Z",
+      "side": 1,
+      "message": "what?",
+      "revId": "5b4c073feacba496b13d2921500e5821e76f4de9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
