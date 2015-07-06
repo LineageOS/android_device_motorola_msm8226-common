@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "7ffa3b31_2d71b9e1",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 549,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2015-07-06T02:36:22Z",
+      "side": 1,
+      "message": "Does it matter in this situation? As I can see even hardware_revisions.sh runs on system.",
+      "parentUuid": "7ffa3b31_cdaa5518",
+      "revId": "90467ec828dba475348ae2e9a1fcf7fdc1e26177",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7ffa3b31_edad1132",
         "filename": "rootdir/etc/init.qcom.rc",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2015-07-06T02:33:49Z",
       "side": 1,
       "message": "Don\u0027t you need this to occur not just on framework restart?",
+      "revId": "90467ec828dba475348ae2e9a1fcf7fdc1e26177",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7ffa3b31_4d6c0508",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 575,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2015-07-06T02:36:22Z",
+      "side": 1,
+      "message": "As I remember trigger_restart_framework was last step of decryption so I thought it\u0027s proper place for this script.",
+      "parentUuid": "7ffa3b31_edad1132",
       "revId": "90467ec828dba475348ae2e9a1fcf7fdc1e26177",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
