@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7ffa3b31_cdaa5518",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 549,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-07-06T02:33:49Z",
+      "side": 1,
+      "message": "Might as well run this stuff as root.",
+      "revId": "90467ec828dba475348ae2e9a1fcf7fdc1e26177",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7ffa3b31_edad1132",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 575,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-07-06T02:33:49Z",
+      "side": 1,
+      "message": "Don\u0027t you need this to occur not just on framework restart?",
+      "revId": "90467ec828dba475348ae2e9a1fcf7fdc1e26177",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
