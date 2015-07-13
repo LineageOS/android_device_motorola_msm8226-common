@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff0f0b1f_c3621cd9",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 795,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-07-13T23:57:55Z",
+      "side": 0,
+      "message": "Are these CPUS defaulting to unplugged?",
+      "range": {
+        "startLine": 795,
+        "startChar": 39,
+        "endLine": 795,
+        "endChar": 45
+      },
+      "revId": "79f0e4219de7a3e37115981cb68c4f5fc9c847e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
