@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff0f0b1f_c31b3c71",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 818,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-07-13T23:24:03Z",
+      "side": 1,
+      "message": "There should already be a power HAL boost hint given during the boot animation.",
+      "range": {
+        "startLine": 818,
+        "startChar": 16,
+        "endLine": 818,
+        "endChar": 20
+      },
+      "revId": "52ff765544cd97a23289ecbf2bba679d7eea8955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ff0f0b1f_e30e4031",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 819,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-07-13T23:24:03Z",
+      "side": 1,
+      "message": "noop should be set by default.",
+      "range": {
+        "startLine": 819,
+        "startChar": 15,
+        "endLine": 819,
+        "endChar": 20
+      },
+      "revId": "52ff765544cd97a23289ecbf2bba679d7eea8955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
