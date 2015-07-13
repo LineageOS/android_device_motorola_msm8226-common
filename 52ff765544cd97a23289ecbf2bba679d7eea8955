@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ff0f0b1f_23743899",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 818,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-07-13T23:55:35Z",
+      "side": 1,
+      "message": "I know , power hal should do that , but now I have less boot time ( -4/5 seconds )",
+      "parentUuid": "ff0f0b1f_c31b3c71",
+      "range": {
+        "startLine": 818,
+        "startChar": 16,
+        "endLine": 818,
+        "endChar": 20
+      },
+      "revId": "52ff765544cd97a23289ecbf2bba679d7eea8955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ff0f0b1f_e30e4031",
         "filename": "rootdir/etc/init.qcom.rc",
         "patchSetId": 2
