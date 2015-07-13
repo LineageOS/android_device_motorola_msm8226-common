@@ -22,6 +22,30 @@
       "revId": "79f0e4219de7a3e37115981cb68c4f5fc9c847e4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ff0f0b1f_a3b4c836",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 795,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-07-13T23:59:41Z",
+      "side": 0,
+      "message": "As far I tested yed",
+      "parentUuid": "ff0f0b1f_c3621cd9",
+      "range": {
+        "startLine": 795,
+        "startChar": 39,
+        "endLine": 795,
+        "endChar": 45
+      },
+      "revId": "79f0e4219de7a3e37115981cb68c4f5fc9c847e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
