@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff0f0b1f_6b131b0f",
+        "filename": "keylayouts/msm8226-tapan9302-snd-card_Button_Jack.kl",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 7230
+      },
+      "writtenOn": "2015-07-19T17:58:35Z",
+      "side": 1,
+      "message": "Already there on Generic.kl\nhttps://github.com/CyanogenMod/android_frameworks_base/blob/cm-12.1/data/keyboards/Generic.kl#L248",
+      "revId": "a40b1abf3541a82dc5dd1bd568642ffb4151beb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
