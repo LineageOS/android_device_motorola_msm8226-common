@@ -34,6 +34,24 @@
       "revId": "a40b1abf3541a82dc5dd1bd568642ffb4151beb6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ff0f0b1f_ab3253a6",
+        "filename": "keylayouts/msm8226-tapan9302-snd-card_Button_Jack.kl",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 7230
+      },
+      "writtenOn": "2015-07-19T18:34:33Z",
+      "side": 1,
+      "message": "Are you sure? With this patch (without the first line), HEADSETHOOK is still recognized here",
+      "parentUuid": "ff0f0b1f_0b025fb5",
+      "revId": "a40b1abf3541a82dc5dd1bd568642ffb4151beb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
