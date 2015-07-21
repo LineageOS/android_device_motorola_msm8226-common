@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "df140735_bc474dbd",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 895,
+      "author": {
+        "id": 7880
+      },
+      "writtenOn": "2015-07-21T17:16:14Z",
+      "side": 1,
+      "message": "These values are basically no-op considering how falcon only reaches up to 1.2 GHz.",
+      "revId": "a821f31cd374b39e8c1a840e991cf9b0fcb8ceae",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "df140735_9c4489b9",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 899,
+      "author": {
+        "id": 7880
+      },
+      "writtenOn": "2015-07-21T17:16:14Z",
+      "side": 1,
+      "message": "These values are basically no-op considering how falcon only reaches up to 1.2 GHz.",
+      "range": {
+        "startLine": 899,
+        "startChar": 71,
+        "endLine": 899,
+        "endChar": 92
+      },
+      "revId": "a821f31cd374b39e8c1a840e991cf9b0fcb8ceae",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
