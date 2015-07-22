@@ -55,6 +55,29 @@
     },
     {
       "key": {
+        "uuid": "df140735_a2c5e45d",
+        "filename": "keylayouts/msm8226-tapan9302-snd-card_Button_Jack.kl",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8217
+      },
+      "writtenOn": "2015-07-22T07:55:27Z",
+      "side": 1,
+      "message": "Only this key is detected on the peregrine.",
+      "range": {
+        "startLine": 1,
+        "startChar": 10,
+        "endLine": 1,
+        "endChar": 21
+      },
+      "revId": "a40b1abf3541a82dc5dd1bd568642ffb4151beb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "df140735_f993975b",
         "filename": "keylayouts/msm8226-tapan9302-snd-card_Button_Jack.kl",
         "patchSetId": 3
