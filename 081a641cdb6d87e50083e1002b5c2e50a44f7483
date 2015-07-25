@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "df140735_62458770",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 7
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-07-25T03:44:06Z",
+      "side": 1,
+      "message": "Traditionally it\u0027s been called init.target.rc :)",
+      "revId": "081a641cdb6d87e50083e1002b5c2e50a44f7483",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
