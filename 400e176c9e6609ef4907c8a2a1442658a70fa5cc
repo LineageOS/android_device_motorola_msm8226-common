@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bf091321_84f4235d",
+        "filename": "liblight/lights.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-08-02T01:48:39Z",
+      "side": 1,
+      "message": "?",
+      "revId": "400e176c9e6609ef4907c8a2a1442658a70fa5cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bf091321_04d7f3c1",
+        "filename": "liblight/lights.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-08-02T01:48:39Z",
+      "side": 1,
+      "message": "Don\u0027t need this.",
+      "revId": "400e176c9e6609ef4907c8a2a1442658a70fa5cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bf091321_e4e3dfa3",
+        "filename": "liblight/lights.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-08-02T01:48:39Z",
+      "side": 1,
+      "message": "Don\u0027t need this.",
+      "revId": "400e176c9e6609ef4907c8a2a1442658a70fa5cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bf091321_a4ef2786",
+        "filename": "liblight/lights.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 172,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-08-02T01:48:39Z",
+      "side": 1,
+      "message": "You\u0027re not unconditionally writing to the white LED file anymore.",
+      "revId": "400e176c9e6609ef4907c8a2a1442658a70fa5cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bf091321_c4e0db99",
+        "filename": "liblight/lights.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 254,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-08-02T01:48:39Z",
+      "side": 1,
+      "message": "if (!dev)",
+      "revId": "400e176c9e6609ef4907c8a2a1442658a70fa5cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
