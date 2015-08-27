@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "3f1d235d_d4aad117",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-08-27T23:00:45Z",
+      "side": 1,
+      "message": "msm8226/msm8610 follow LA.BF.1.1.2 branches. LA.BF.1.1.1 is msm8974. Not that it matters though as media configs seem to be identical on both.",
+      "revId": "2cf3a45e5bb7232609b96066238f69e153fe5f63",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3f1d235d_71bc2fbb",
         "filename": "configs/media_codecs.xml",
         "patchSetId": 2
@@ -30,6 +47,24 @@
       "writtenOn": "2015-08-26T23:08:28Z",
       "side": 1,
       "message": "Done",
+      "parentUuid": "3f1d235d_71bc2fbb",
+      "revId": "2cf3a45e5bb7232609b96066238f69e153fe5f63",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f1d235d_54b7e187",
+        "filename": "configs/media_codecs.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-08-27T23:00:45Z",
+      "side": 1,
+      "message": "What\u0027s wrong with this exactly? Google codecs are preferred like this on stock, on CAF, on Nexus devices, and on CM for other qcom B-family devices (i.e. bacon). This is how it should be AFAICT.",
       "parentUuid": "3f1d235d_71bc2fbb",
       "revId": "2cf3a45e5bb7232609b96066238f69e153fe5f63",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
