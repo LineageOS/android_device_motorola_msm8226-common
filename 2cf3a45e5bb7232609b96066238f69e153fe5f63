@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3f1d235d_d4589157",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-08-28T00:08:03Z",
+      "side": 1,
+      "message": "media configs are the same for both branches",
+      "parentUuid": "3f1d235d_d4aad117",
+      "revId": "2cf3a45e5bb7232609b96066238f69e153fe5f63",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3f1d235d_71bc2fbb",
         "filename": "configs/media_codecs.xml",
         "patchSetId": 2
