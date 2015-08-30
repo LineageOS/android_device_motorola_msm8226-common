@@ -34,6 +34,24 @@
       "revId": "c9c0caaa1ed34b3beffd07d69f60ce5e015562c7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f1d235d_a5bde169",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 740,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2015-08-30T03:32:57Z",
+      "side": 1,
+      "message": "Triggers in theory should be enough. When the power supply class sends a \"battery full\" event, it also sets the brightness of all the LEDs with a \"battery-full\" trigger to 255. Any other event will turn LEDs off.\n\nI\u0027m actually wondering how is this even working. You are basically telling \"turn this LED on when the battery is full, but also turn it on right now\". There must be something turning the LED off right after this.",
+      "parentUuid": "3f1d235d_2588b1c4",
+      "revId": "c9c0caaa1ed34b3beffd07d69f60ce5e015562c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
