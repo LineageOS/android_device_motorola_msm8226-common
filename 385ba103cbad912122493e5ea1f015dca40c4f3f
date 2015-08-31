@@ -22,6 +22,30 @@
       "revId": "385ba103cbad912122493e5ea1f015dca40c4f3f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f1d235d_6618f080",
+        "filename": "liblight/lights.c",
+        "patchSetId": 4
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2015-08-31T17:11:24Z",
+      "side": 0,
+      "message": "Umm, maybe it depends on onMs and offMs.\n\necho 0 \u003e /sys/class/leds/white/brightness\necho FF0000 0 0 1 1 \u003e /sys/class/leds/rgb/control\n\nIs the LED turning on doing the above? No blinking",
+      "parentUuid": "3f1d235d_c6190489",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 43,
+        "endChar": 45
+      },
+      "revId": "385ba103cbad912122493e5ea1f015dca40c4f3f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
