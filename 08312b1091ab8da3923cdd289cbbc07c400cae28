@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f1d235d_69e1e3fe",
+        "filename": "msm8226.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-08-31T22:58:53Z",
+      "side": 1,
+      "message": "Delete lines instead of commenting them.",
+      "revId": "08312b1091ab8da3923cdd289cbbc07c400cae28",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
