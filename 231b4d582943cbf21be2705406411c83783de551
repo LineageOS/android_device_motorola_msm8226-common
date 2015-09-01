@@ -16,6 +16,24 @@
       "revId": "231b4d582943cbf21be2705406411c83783de551",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f1d235d_cc892527",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 722,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2015-09-01T03:11:31Z",
+      "side": 1,
+      "message": "I\u0027d prefer to have \u0027charging\u0027 as it is in this CR, so if I\u0027m going to use mass_storage here, I\u0027d have make mass_storage equals to \u0027charging\u0027.\n\nIt\u0027s not clear to me why it would be better to use mass_storage here.\n\nIs mass_storage set automatically by something?",
+      "parentUuid": "3f1d235d_2ce3f907",
+      "revId": "231b4d582943cbf21be2705406411c83783de551",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
