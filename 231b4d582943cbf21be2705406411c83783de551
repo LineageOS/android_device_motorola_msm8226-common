@@ -70,6 +70,24 @@
       "revId": "231b4d582943cbf21be2705406411c83783de551",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f1d235d_ec55011f",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 722,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-09-01T04:25:12Z",
+      "side": 1,
+      "message": "Maybe I\u0027m not being clear when I\u0027m responding.\n\nWhat I\u0027m trying to say:\n\nsetprop sys.usb.config mass_storage here\n\nRemove any changes to init.qcom.usb.rc",
+      "parentUuid": "3f1d235d_4c03d543",
+      "revId": "231b4d582943cbf21be2705406411c83783de551",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
