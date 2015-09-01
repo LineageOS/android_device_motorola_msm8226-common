@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f1d235d_2ce3f907",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 722,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-09-01T02:42:31Z",
+      "side": 1,
+      "message": "Why not just set this to mass_storage if you are going to make charging similar to mass storage anyway? I believe that QCOM is doing this also.",
+      "revId": "231b4d582943cbf21be2705406411c83783de551",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
