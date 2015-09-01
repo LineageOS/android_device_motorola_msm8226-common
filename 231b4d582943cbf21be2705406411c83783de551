@@ -52,6 +52,24 @@
       "revId": "231b4d582943cbf21be2705406411c83783de551",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f1d235d_4c03d543",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 722,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2015-09-01T03:39:21Z",
+      "side": 1,
+      "message": "Please note that \u0027mass_storage\u0027 is just the function, the idProduct is what really changes what the operating system sees. I used \u0027mass_storage\u0027 as \u0027functions\u0027 because that\u0027s what Motorola uses and probably it\u0027s doing something internally (since unlike \u0027charging\u0027, it exists).\n\nOur current \u0027mass_storage\u0027 is not setting any idProduct, which I think is a very important thing to take into account.\n\nWindows heavily relies on idProduct (at least that\u0027s what I noticed) and I\u0027m not sure that this specific idProduct is the correct id for \u0027mass_storage\u0027 (but I\u0027m not really familiar with Windows, so...). That\u0027s why I preferred to change \u0027charging\u0027, which is an artificial mode for something very close to offline charging.\n\nAside from here, where would this \u0027mass_storage\u0027 mode be used?",
+      "parentUuid": "3f1d235d_4c7d151b",
+      "revId": "231b4d582943cbf21be2705406411c83783de551",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
