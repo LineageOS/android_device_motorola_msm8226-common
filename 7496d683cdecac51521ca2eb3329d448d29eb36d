@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f1d235d_3b7d691c",
+        "filename": "liblight/lights.c",
+        "patchSetId": 6
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-09-03T02:48:15Z",
+      "side": 1,
+      "message": "Seems like these two lines are unnecessary changes.",
+      "revId": "7496d683cdecac51521ca2eb3329d448d29eb36d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f1d235d_7bb521ee",
+        "filename": "liblight/lights.c",
+        "patchSetId": 6
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-09-03T02:48:15Z",
+      "side": 1,
+      "message": "Don\u0027t need to change the code style here.",
+      "revId": "7496d683cdecac51521ca2eb3329d448d29eb36d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
