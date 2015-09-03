@@ -16,6 +16,24 @@
       "revId": "87721232dc8da9b8e9dd64fd59e2589a23b0bc64",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f1d235d_cd2c7c9b",
+        "filename": "liblight/lights.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 203,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-09-03T04:24:48Z",
+      "side": 1,
+      "message": "Yeah, the original implementation here is wrong. It should be setting g_attention though. The internal functions can decide based on the state objects which takes priority so notifications/attention don\u0027t cause a conflicting color/blink pattern.",
+      "parentUuid": "3f1d235d_fb581157",
+      "revId": "87721232dc8da9b8e9dd64fd59e2589a23b0bc64",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
