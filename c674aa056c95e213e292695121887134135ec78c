@@ -16,6 +16,24 @@
       "revId": "c674aa056c95e213e292695121887134135ec78c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f1d235d_3bda09e9",
+        "filename": "liblight/lights.c",
+        "patchSetId": 6
+      },
+      "lineNbr": 244,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2015-09-03T03:17:04Z",
+      "side": 0,
+      "message": "Right, I think I was wrong here. I remember having issue with it, but I guess it\u0027s not a problem of liblights if certain apps don\u0027t do things correctly.",
+      "parentUuid": "3f1d235d_1b7aad23",
+      "revId": "c674aa056c95e213e292695121887134135ec78c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
