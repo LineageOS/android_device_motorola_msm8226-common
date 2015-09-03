@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f1d235d_fb581157",
+        "filename": "liblight/lights.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 203,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2015-09-03T03:50:35Z",
+      "side": 1,
+      "message": "set_light_attention was doing the same things of set_light_notifications, except for setting g_attention (which wasn\u0027t used at all).",
+      "revId": "87721232dc8da9b8e9dd64fd59e2589a23b0bc64",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
