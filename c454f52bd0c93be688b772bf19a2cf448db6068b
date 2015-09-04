@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "3f1d235d_e39aa7c3",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 822,
+      "author": {
+        "id": 7880
+      },
+      "writtenOn": "2015-09-04T11:06:31Z",
+      "side": 1,
+      "message": "IIRC, timer_rate is set to 20K by default so this change is redundant.",
+      "revId": "c454f52bd0c93be688b772bf19a2cf448db6068b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3f1d235d_d0c08f53",
         "filename": "rootdir/etc/init.qcom.rc",
         "patchSetId": 3
