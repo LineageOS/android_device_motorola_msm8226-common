@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f1d235d_dc30a80a",
+        "filename": "system.prop",
+        "patchSetId": 11
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-09-06T15:05:38Z",
+      "side": 1,
+      "message": "This is common to all 5.+ moto builds",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 26
+      },
+      "revId": "e67b39cbf09458fee126a6cb97eadc3ea1cac556",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
