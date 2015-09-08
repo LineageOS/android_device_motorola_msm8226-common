@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f1d235d_72189b80",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 13
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-09-08T01:36:28Z",
+      "side": 1,
+      "message": "You\u0027re going to need to use something like VENDOR_PATH here, LOCAL_PATH gets confusing.",
+      "revId": "b76aa514604c547542dd8569d011e96a98804222",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
