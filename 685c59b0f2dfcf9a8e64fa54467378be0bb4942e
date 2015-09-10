@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1f1a1f67_530944db",
+        "filename": "msm8226.mk",
+        "patchSetId": 14
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-09-10T13:21:38Z",
+      "side": 1,
+      "message": "LOCAL_PATH is automaically picked",
+      "parentUuid": "1f1a1f67_d3467422",
+      "revId": "685c59b0f2dfcf9a8e64fa54467378be0bb4942e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1f1a1f67_b353f8e2",
         "filename": "system.prop",
         "patchSetId": 14
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "1f1a1f67_330ec8e5",
+        "filename": "system.prop",
+        "patchSetId": 14
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-09-10T13:21:38Z",
+      "side": 1,
+      "message": "Yes it is",
+      "parentUuid": "1f1a1f67_b353f8e2",
+      "revId": "685c59b0f2dfcf9a8e64fa54467378be0bb4942e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1f1a1f67_9350fcd6",
         "filename": "system.prop",
         "patchSetId": 14
@@ -47,6 +83,24 @@
       "writtenOn": "2015-09-10T12:54:51Z",
       "side": 1,
       "message": "Can drop the trailing \"\"\u0027s",
+      "revId": "685c59b0f2dfcf9a8e64fa54467378be0bb4942e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f1a1f67_1313cc0f",
+        "filename": "system.prop",
+        "patchSetId": 14
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-09-10T13:21:38Z",
+      "side": 1,
+      "message": "Will clean up\nOn stock moto renamed these props to nitz_lons_ *nitz_sons_*",
+      "parentUuid": "1f1a1f67_9350fcd6",
       "revId": "685c59b0f2dfcf9a8e64fa54467378be0bb4942e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
