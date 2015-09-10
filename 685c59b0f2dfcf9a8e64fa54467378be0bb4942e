@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f1a1f67_d3467422",
+        "filename": "msm8226.mk",
+        "patchSetId": 14
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-09-10T12:54:51Z",
+      "side": 1,
+      "message": "Needs to define LOCAL_PATH in this makefile before this? Not sure in which order makefiles are parsed and where this is picked up from.",
+      "revId": "685c59b0f2dfcf9a8e64fa54467378be0bb4942e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f1a1f67_b353f8e2",
+        "filename": "system.prop",
+        "patchSetId": 14
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-09-10T12:54:51Z",
+      "side": 1,
+      "message": "This is common?",
+      "revId": "685c59b0f2dfcf9a8e64fa54467378be0bb4942e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f1a1f67_9350fcd6",
+        "filename": "system.prop",
+        "patchSetId": 14
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-09-10T12:54:51Z",
+      "side": 1,
+      "message": "Can drop the trailing \"\"\u0027s",
+      "revId": "685c59b0f2dfcf9a8e64fa54467378be0bb4942e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
