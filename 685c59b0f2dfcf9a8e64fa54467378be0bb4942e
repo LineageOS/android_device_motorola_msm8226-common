@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "1f1a1f67_93ec7cf4",
+        "filename": "msm8226.mk",
+        "patchSetId": 14
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-09-10T14:29:07Z",
+      "side": 1,
+      "message": "I don\u0027t know how but it does xD",
+      "parentUuid": "1f1a1f67_3327e867",
+      "revId": "685c59b0f2dfcf9a8e64fa54467378be0bb4942e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1f1a1f67_b353f8e2",
         "filename": "system.prop",
         "patchSetId": 14
@@ -102,6 +120,24 @@
       "side": 1,
       "message": "falcon didn\u0027t have it before. Source checks for a boolean so this should be \u0027true\u0027 anyway. Yes, this also works but it\u0027s bad practice.",
       "parentUuid": "1f1a1f67_330ec8e5",
+      "revId": "685c59b0f2dfcf9a8e64fa54467378be0bb4942e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f1a1f67_b3ef78e8",
+        "filename": "system.prop",
+        "patchSetId": 14
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-09-10T14:29:07Z",
+      "side": 1,
+      "message": "Moto have this prop enabled on peregrine and falcon",
+      "parentUuid": "1f1a1f67_132cec45",
       "revId": "685c59b0f2dfcf9a8e64fa54467378be0bb4942e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
