@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f1a1f67_7593fb50",
+        "filename": "sepolicy/file.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-09-16T04:39:24Z",
+      "side": 1,
+      "message": "This is weird o___0",
+      "revId": "721a71f7d89ca05a4119fb6371017fa2e75dc660",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f1a1f67_5598ff68",
+        "filename": "sepolicy/system_server.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-09-16T04:39:24Z",
+      "side": 1,
+      "message": "This is weird too o___0",
+      "revId": "721a71f7d89ca05a4119fb6371017fa2e75dc660",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
