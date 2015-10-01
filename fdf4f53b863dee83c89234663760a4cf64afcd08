@@ -39,6 +39,29 @@
       "revId": "fdf4f53b863dee83c89234663760a4cf64afcd08",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f436f4f_581e1171",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 469,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-10-01T19:21:54Z",
+      "side": 1,
+      "message": "This too",
+      "range": {
+        "startLine": 468,
+        "startChar": 0,
+        "endLine": 469,
+        "endChar": 77
+      },
+      "revId": "fdf4f53b863dee83c89234663760a4cf64afcd08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
