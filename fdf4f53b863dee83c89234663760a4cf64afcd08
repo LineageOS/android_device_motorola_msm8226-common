@@ -16,6 +16,29 @@
       "revId": "fdf4f53b863dee83c89234663760a4cf64afcd08",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f436f4f_d820c1b3",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 467,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-10-01T19:17:05Z",
+      "side": 1,
+      "message": "Duplicated\nhttps://github.com/CyanogenMod/android_vendor_cm/blob/cm-12.1/prebuilt/common/etc/init.local.rc#L30",
+      "range": {
+        "startLine": 436,
+        "startChar": 0,
+        "endLine": 467,
+        "endChar": 84
+      },
+      "revId": "fdf4f53b863dee83c89234663760a4cf64afcd08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
