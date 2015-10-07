@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7f287b81_d709b631",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 708,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2015-10-07T02:23:10Z",
+      "side": 1,
+      "message": "These appear to be useless, the properties are not yet defined here.",
+      "range": {
+        "startLine": 705,
+        "startChar": 0,
+        "endLine": 708,
+        "endChar": 84
+      },
+      "revId": "6d3de2ee62320e8f08f5fc6b88a1a17033ae517b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
