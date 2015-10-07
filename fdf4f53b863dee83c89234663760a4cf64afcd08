@@ -80,6 +80,23 @@
       "revId": "fdf4f53b863dee83c89234663760a4cf64afcd08",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7f287b81_2271d6e1",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 472,
+      "author": {
+        "id": 7880
+      },
+      "writtenOn": "2015-10-07T08:23:57Z",
+      "side": 1,
+      "message": "Aren\u0027t input boosts and thread migration boosts disabled by default anyway since both sync_threshold and input_boost_freq aren\u0027t set?",
+      "revId": "fdf4f53b863dee83c89234663760a4cf64afcd08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
