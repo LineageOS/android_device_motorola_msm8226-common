@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f2577a7_3ce69dea",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2015-10-21T00:48:13Z",
+      "side": 1,
+      "message": "This is actually not needed for older fm_qsoc_patches. It puts calibration data to /data/app/ instead.",
+      "revId": "906cb6753742aae4c74ebe920cd9482449ddbd37",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
