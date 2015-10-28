@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f2577a7_3d94448b",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-10-28T18:40:40Z",
+      "side": 0,
+      "message": "Will be merged soon",
+      "range": {
+        "startLine": 180,
+        "startChar": 0,
+        "endLine": 182,
+        "endChar": 71
+      },
+      "revId": "c2d11a7ddf1b6fcca1cebadd9a56c0e41062e6b4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f2577a7_1d91889a",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 246,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-10-28T18:40:40Z",
+      "side": 0,
+      "message": "Will be merged soon",
+      "range": {
+        "startLine": 242,
+        "startChar": 0,
+        "endLine": 246,
+        "endChar": 84
+      },
+      "revId": "c2d11a7ddf1b6fcca1cebadd9a56c0e41062e6b4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
