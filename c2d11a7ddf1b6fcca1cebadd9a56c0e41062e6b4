@@ -52,6 +52,24 @@
       "revId": "c2d11a7ddf1b6fcca1cebadd9a56c0e41062e6b4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f2577a7_fd2a2ee5",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2015-10-30T19:27:17Z",
+      "side": 0,
+      "message": "For some reason we are doing 2 things on 8974/8226:\n\n1: we append the dts to the zImage, which can be simplified like this: https://github.com/CyanogenMod/android_device_oppo_msm8974-common/commit/51af875930640edca2392a92341eaa3543ab1221\n\n2: we append dt.img to the kernel too\n\nI tested on find7 and couldn\u0027t boot without dt.img, because aboot wouldn\u0027t let me continue (FAILED (remote: dtb not found))",
+      "parentUuid": "5f2577a7_3a59dc59",
+      "revId": "c2d11a7ddf1b6fcca1cebadd9a56c0e41062e6b4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
