@@ -45,6 +45,30 @@
       "revId": "13eb3b11548f27accb1567e61f6a2abbac51b32b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f2f7f8d_69cb3253",
+        "filename": "power/power.c",
+        "patchSetId": 4
+      },
+      "lineNbr": 202,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2015-11-07T18:13:12Z",
+      "side": 1,
+      "message": "power hal crash and device bootloop",
+      "parentUuid": "1f2f7f8d_068edd77",
+      "range": {
+        "startLine": 202,
+        "startChar": 0,
+        "endLine": 202,
+        "endChar": 3
+      },
+      "revId": "13eb3b11548f27accb1567e61f6a2abbac51b32b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
