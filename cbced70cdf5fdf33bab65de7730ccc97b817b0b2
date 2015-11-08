@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f2f7f8d_abed8a26",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 722,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2015-11-08T22:06:30Z",
+      "side": 1,
+      "message": "This is not working, however if I run this from the shell, this file is correctly labeled.",
+      "range": {
+        "startLine": 722,
+        "startChar": 4,
+        "endLine": 722,
+        "endChar": 55
+      },
+      "revId": "cbced70cdf5fdf33bab65de7730ccc97b817b0b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
