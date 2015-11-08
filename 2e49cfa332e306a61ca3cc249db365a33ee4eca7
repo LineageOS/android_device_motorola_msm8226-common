@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f2f7f8d_1af06ac9",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 9
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 8640
+      },
+      "writtenOn": "2015-11-08T04:55:42Z",
+      "side": 1,
+      "message": "restorecon_recursive ?",
+      "range": {
+        "startLine": 78,
+        "startChar": 4,
+        "endLine": 78,
+        "endChar": 14
+      },
+      "revId": "2e49cfa332e306a61ca3cc249db365a33ee4eca7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
