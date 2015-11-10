@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f2f7f8d_833bd236",
+        "filename": "sepolicy/property_contexts",
+        "patchSetId": 43
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2015-11-10T02:44:37Z",
+      "side": 1,
+      "message": "Any idea on why is qti_init_shell allowed to set ro.hw.revision, but not this (which I\u0027m not sure is really needed)?",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 15
+      },
+      "revId": "7a33ad240ccc8f68a395b72573c01066d060c9e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
