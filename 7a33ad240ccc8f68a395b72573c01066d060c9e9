@@ -22,6 +22,24 @@
       "revId": "7a33ad240ccc8f68a395b72573c01066d060c9e9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f2f7f8d_c312fab1",
+        "filename": "sepolicy/property_contexts",
+        "patchSetId": 43
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2015-11-10T02:45:58Z",
+      "side": 1,
+      "message": "I dunno, I don\u0027t think it\u0027s needed anyway.",
+      "parentUuid": "1f2f7f8d_833bd236",
+      "revId": "7a33ad240ccc8f68a395b72573c01066d060c9e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
