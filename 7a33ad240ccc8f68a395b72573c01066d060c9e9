@@ -40,6 +40,24 @@
       "revId": "7a33ad240ccc8f68a395b72573c01066d060c9e9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f2f7f8d_2379befb",
+        "filename": "sepolicy/property_contexts",
+        "patchSetId": 43
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2015-11-10T02:54:08Z",
+      "side": 1,
+      "message": "Yeah, I\u0027d say to revert the changes of this last commit, they are uselessly adding stuff here.",
+      "parentUuid": "1f2f7f8d_c312fab1",
+      "revId": "7a33ad240ccc8f68a395b72573c01066d060c9e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
