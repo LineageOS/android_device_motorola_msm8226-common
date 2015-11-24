@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f4b6375_072cb845",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2015-11-24T03:27:25Z",
+      "side": 1,
+      "message": "Do that in gabriele\u0027s commit.",
+      "revId": "c5d97f4c5d9a8593ca7539c4262a105c0124a994",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
