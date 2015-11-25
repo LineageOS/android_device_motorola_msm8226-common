@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff82abbf_dce0e599",
+        "filename": "rootdir/etc/fstab.qcom",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2015-11-25T05:16:49Z",
+      "side": 0,
+      "message": "Why would you remove this?",
+      "range": {
+        "startLine": 8,
+        "startChar": 123,
+        "endLine": 8,
+        "endChar": 138
+      },
+      "revId": "73860e946af4deb3a29d1182d26b792b42583138",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
