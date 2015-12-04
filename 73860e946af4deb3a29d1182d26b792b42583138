@@ -22,6 +22,30 @@
       "revId": "73860e946af4deb3a29d1182d26b792b42583138",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bf8cb3f7_80750b9b",
+        "filename": "rootdir/etc/fstab.qcom",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2015-12-04T04:10:52Z",
+      "side": 0,
+      "message": "To answer my own question. This is what Motorola does and honestly I think it\u0027s not a bad idea here. We don\u0027t need a fast /cache, so having something more reliable is better in this case.",
+      "parentUuid": "ff82abbf_dce0e599",
+      "range": {
+        "startLine": 8,
+        "startChar": 123,
+        "endLine": 8,
+        "endChar": 138
+      },
+      "revId": "73860e946af4deb3a29d1182d26b792b42583138",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
