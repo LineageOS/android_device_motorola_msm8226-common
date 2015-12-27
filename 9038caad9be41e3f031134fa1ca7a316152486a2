@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f769fc5_7351c00e",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 382,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2015-12-27T06:40:11Z",
+      "side": 1,
+      "message": "I forgot about this, using falcon as reference for this is not a great idea...",
+      "range": {
+        "startLine": 382,
+        "startChar": 4,
+        "endLine": 382,
+        "endChar": 61
+      },
+      "revId": "9038caad9be41e3f031134fa1ca7a316152486a2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
