@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fce034c_8c1b0772",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 390,
+      "author": {
+        "id": 11336
+      },
+      "writtenOn": "2015-12-27T10:53:18Z",
+      "side": 1,
+      "message": "Though this saves power,its really annoying to press power button each time.",
+      "range": {
+        "startLine": 390,
+        "startChar": 4,
+        "endLine": 390,
+        "endChar": 75
+      },
+      "revId": "217f574219a210feab9e1eb3d40141c5dc57c0f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
