@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "3fce034c_ace2832e",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 355,
+      "author": {
+        "id": 12678
+      },
+      "writtenOn": "2015-12-27T17:11:46Z",
+      "side": 1,
+      "message": "duplicated of line 245",
+      "range": {
+        "startLine": 355,
+        "startChar": 0,
+        "endLine": 355,
+        "endChar": 52
+      },
+      "revId": "217f574219a210feab9e1eb3d40141c5dc57c0f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3fce034c_8c1b0772",
         "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
         "patchSetId": 2
