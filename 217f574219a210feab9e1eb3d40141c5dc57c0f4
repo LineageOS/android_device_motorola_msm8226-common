@@ -48,6 +48,30 @@
     },
     {
       "key": {
+        "uuid": "3fce034c_ec464b22",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 390,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2015-12-27T19:09:11Z",
+      "side": 1,
+      "message": "What do you mean exactly? This doesn\u0027t really change things that much.",
+      "parentUuid": "3fce034c_8c1b0772",
+      "range": {
+        "startLine": 390,
+        "startChar": 4,
+        "endLine": 390,
+        "endChar": 75
+      },
+      "revId": "217f574219a210feab9e1eb3d40141c5dc57c0f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3fce034c_4ce8bf15",
         "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
         "patchSetId": 2
