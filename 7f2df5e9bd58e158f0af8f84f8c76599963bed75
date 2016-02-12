@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ffb9cba7_56a35150",
+        "filename": "libsensors/bst/hal/ProximitySensor.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 232,
+      "author": {
+        "id": 11221
+      },
+      "writtenOn": "2016-02-12T19:32:56Z",
+      "side": 1,
+      "message": "I probably should add logging as a separate patch (if at all) ... also cast to (int) is not required.",
+      "range": {
+        "startLine": 232,
+        "startChar": 16,
+        "endLine": 232,
+        "endChar": 94
+      },
+      "revId": "7f2df5e9bd58e158f0af8f84f8c76599963bed75",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
