@@ -528,6 +528,8 @@ on property:ro.use_data_netmgrd=false
 
 service netmgrd /system/bin/netmgrd
     class main
+    user root
+    group root wifi wakelock radio
 
 service qcamerasvr /system/bin/mm-qcamera-daemon
     class late_start
