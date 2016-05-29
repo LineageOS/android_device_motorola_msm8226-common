@@ -22,6 +22,30 @@
       "revId": "bc97c00ab0b21e43a40c14e0cc65dd36e7a9ad38",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_522533c1",
+        "filename": "bluetooth/bdroid_buildcfg.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2016-05-29T10:19:05Z",
+      "side": 1,
+      "message": "This flag is enabled on titan/thea since 5.0.2 but missing in falcon and peregrine",
+      "parentUuid": "5faad753_923babe9",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 31
+      },
+      "revId": "bc97c00ab0b21e43a40c14e0cc65dd36e7a9ad38",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
