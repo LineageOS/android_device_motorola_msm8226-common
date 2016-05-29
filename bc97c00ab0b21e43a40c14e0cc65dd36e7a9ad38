@@ -46,6 +46,30 @@
       "revId": "bc97c00ab0b21e43a40c14e0cc65dd36e7a9ad38",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_f21d3f73",
+        "filename": "bluetooth/bdroid_buildcfg.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2016-05-29T10:40:50Z",
+      "side": 1,
+      "message": "Well, I can only test this on falcon, but I don\u0027t expect this to be different for the other variants. What I get is:\n\n  bt_btm  : btm_ble_vendor_capability_vsc_cmpl_cback: stat\u003d255, irk\u003d0, ADV ins:0, rpa\u003d0, ener\u003d0, ext_scan\u003d0\n\nSo enabling this should make no difference.",
+      "parentUuid": "5faad753_522533c1",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 31
+      },
+      "revId": "bc97c00ab0b21e43a40c14e0cc65dd36e7a9ad38",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
