@@ -16,6 +16,24 @@
       "revId": "85abce4627fd066f5ec0721b200be562f4879439",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fa4df85_a6827f4e",
+        "filename": "mkbootimg.mk",
+        "patchSetId": 9
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2016-08-28T08:51:32Z",
+      "side": 1,
+      "message": "It\u0027s part of BOARD_MKBOOTIMG_ARGS",
+      "parentUuid": "1fa4df85_e6887772",
+      "revId": "85abce4627fd066f5ec0721b200be562f4879439",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
