@@ -34,6 +34,24 @@
       "revId": "85abce4627fd066f5ec0721b200be562f4879439",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fa4df85_6694878c",
+        "filename": "mkbootimg.mk",
+        "patchSetId": 9
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2016-08-28T08:52:07Z",
+      "side": 1,
+      "message": "BOARD_MKBOOTIMG_ARGS :\u003d --ramdisk_offset 0x01000000 --tags_offset 0x00000100\ndoesn\u0027t seems like",
+      "parentUuid": "1fa4df85_a6827f4e",
+      "revId": "85abce4627fd066f5ec0721b200be562f4879439",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
