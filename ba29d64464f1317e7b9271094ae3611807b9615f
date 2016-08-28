@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_463b8bd0",
+        "filename": "mkbootimg.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2016-08-28T08:23:25Z",
+      "side": 1,
+      "message": "here we could actually simply do\n  $(call build-recoveryimage-target, $@)",
+      "range": {
+        "startLine": 24,
+        "startChar": 1,
+        "endLine": 24,
+        "endChar": 88
+      },
+      "revId": "ba29d64464f1317e7b9271094ae3611807b9615f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
