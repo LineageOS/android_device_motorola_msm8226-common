@@ -22,6 +22,30 @@
       "revId": "45f4b24909f9a8d8180b66414173ca84362e1454",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ff2e2bb8_e0223e01",
+        "filename": "camera/CameraWrapper.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 607,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2016-10-29T10:17:46Z",
+      "side": 1,
+      "message": "I wanted to make it clear that at least one attempt is done, independently on the value of OPEN_RETRIES. I need to adjust this in any case, at the last iteration usleep should be skipped, even if rv is not zero.",
+      "parentUuid": "ff2e2bb8_e0399e3f",
+      "range": {
+        "startLine": 605,
+        "startChar": 0,
+        "endLine": 607,
+        "endChar": 57
+      },
+      "revId": "45f4b24909f9a8d8180b66414173ca84362e1454",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
