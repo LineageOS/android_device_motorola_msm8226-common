@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff2e2bb8_9a5eef0f",
+        "filename": "sepolicy/mac_permissions.xml",
+        "patchSetId": 10
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2016-11-21T14:24:18Z",
+      "side": 1,
+      "message": "I probably should rename it to nmi / nmisemi as it\u0027s not Moto\u0027s app.",
+      "range": {
+        "startLine": 4,
+        "startChar": 4,
+        "endLine": 4,
+        "endChar": 31
+      },
+      "revId": "67a97a7dfa64c96dabd4807de032ea556ad209b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
