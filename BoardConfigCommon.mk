@@ -85,6 +85,7 @@ TARGET_USES_ION := true
 USE_OPENGL_RENDERER := true
 
 # FM Radio
+BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # Fonts
