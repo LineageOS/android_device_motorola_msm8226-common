@@ -32,8 +32,8 @@
 #define AK8963_SELFTEST_MIN_Z	-1000
 #define AK8963_SELFTEST_MAX_Z	-300
 
-#define CONVERT_ACC(a)	((int)((a) * 720 / 9.8f))
-#define CONVERT_MAG(m)	((int)((m) / 0.06f))
+#define CONVERT_ACC(a)	((int)((a) * 1))
+#define CONVERT_MAG(m)	((int)((m) * 10))
 #define CONVERT_ORI(o)	((int)((o) * 64))
 
 /*** Type declaration *********************************************************/
