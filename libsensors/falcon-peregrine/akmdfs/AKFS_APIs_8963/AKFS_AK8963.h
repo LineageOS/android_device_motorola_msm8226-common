@@ -25,9 +25,9 @@
 #define AK8963_BDATA_SIZE			8
 
 #define AK8963_HSENSE_DEFAULT		1
-#define AK8963_HSENSE_TARGET		0.3f
-#define AK8963_ASENSE_DEFAULT		720
-#define AK8963_ASENSE_TARGET		9.80665f
+#define AK8963_HSENSE_TARGET		1
+#define AK8963_ASENSE_DEFAULT		1
+#define AK8963_ASENSE_TARGET		1
 
 #define AK8963_HDATA_CONVERTER(hi, low, asa) \
 	(AKFLOAT)((int16)((((uint16)(hi))<<8)+(uint16)(low))*(((asa)/256.0f) + 0.5f))
