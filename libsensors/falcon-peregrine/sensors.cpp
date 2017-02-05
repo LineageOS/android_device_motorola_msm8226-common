@@ -55,7 +55,6 @@ static struct sensor_t sSensorList[] = {
         .fifoMaxEventCount = 0,
         .stringType = SENSOR_STRING_TYPE_ACCELEROMETER,
         .requiredPermission = 0,
-        .maxDelay = (ACC_MAX_DELAY_MS * 1000),
         .flags = SENSOR_FLAG_CONTINUOUS_MODE,
         .reserved = {}
     },
