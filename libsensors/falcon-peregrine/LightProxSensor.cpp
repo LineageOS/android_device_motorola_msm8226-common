@@ -69,7 +69,7 @@ int LightProxSensor::setDelay(int32_t handle, int64_t ns)
         return -EINVAL;
     }
 
-    int fd = open("/sys/module/ct406/parameters/als_delay", O_RDWR);
+    int fd = open("/sys/module/ct406/parameters/als_delay", O_WRONLY);
     if (fd < 0) {
         ALOGE("Light: could not open sysfs file: %d", fd);
         return fd;
@@ -108,7 +108,7 @@ int LightProxSensor::enable(int32_t handle, int en)
     if (enable == mEnabled[sensor])
         return 0;
 
-    fd = open(enable_path, O_RDWR);
+    fd = open(enable_path, O_WRONLY);
     if (fd >= 0) {
         int ret = write(fd, enable ? "1" : "0", 1);
         if (ret < 0) {
