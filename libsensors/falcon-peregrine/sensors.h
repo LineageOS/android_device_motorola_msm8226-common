@@ -51,7 +51,6 @@ __BEGIN_DECLS
 
 /*****************************************************************************/
 
-#define ACC_MAX_DELAY_MS            200 /* milliseconds */
 #define MAG_MIN_DELAY_NS            200000000LL /* nanoseconds */
 
 #define EVENT_TYPE_ACCEL_X          ABS_Y
