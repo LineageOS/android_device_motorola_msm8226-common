@@ -51,7 +51,7 @@ static pthread_t s_thread;  /*!< Thread handle */
  A thread function which is raised when measurement is started.
  @param[in] args This parameter is not used currently.
  */
-static void* thread_main(void* args)
+static void* thread_main(__attribute__((unused)) void* args)
 {
 	AKFS_MeasureLoop();
 	return ((void*)0);
