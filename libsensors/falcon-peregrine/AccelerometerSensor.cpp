@@ -153,9 +153,6 @@ int AccelerometerSensor::setDelay(int32_t handle, int64_t ns)
         return 0;
     }
 
-    if (delay > ACC_MAX_DELAY_MS)
-        delay = ACC_MAX_DELAY_MS;
-
     switch (handle) {
     case ID_A:
         ALOGV("Accelerometer (ACC): delay=%d", delay);
