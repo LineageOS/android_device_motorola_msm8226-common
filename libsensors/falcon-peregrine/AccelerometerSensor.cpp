@@ -138,6 +138,7 @@ int AccelerometerSensor::setDelay(int32_t handle, int64_t ns)
 {
     int delay = ns / 1000000;
     int ret;
+    int fd;
 
     switch (handle) {
     case ID_A:
@@ -173,6 +174,20 @@ int AccelerometerSensor::setDelay(int32_t handle, int64_t ns)
     close_device();
     if (ret < 0)
         ALOGE("Accelerometer: could not set delay: %d", ret);
+
+    fd = open("/sys/class/compass/akm8963/delay_acc", O_WRONLY);
+    if (fd >= 0) {
+        char buf[80];
+        int ret;
+        sprintf(buf, "%lld", ns);
+        ret = write(fd, buf, strlen(buf)+1);
+        if (ret < 0) {
+            ALOGE("AccelerometerSensor: could not write delay_acc");
+            return ret;
+        }
+        close(fd);
+        return 0;
+    }
 
     return ret;
 }
