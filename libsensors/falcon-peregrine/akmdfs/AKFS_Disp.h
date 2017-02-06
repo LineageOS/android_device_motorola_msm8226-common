@@ -19,7 +19,7 @@
 #ifndef AKFS_INC_DISP_H
 #define AKFS_INC_DISP_H
 
-/* Include file for AK8975 library. */
+/* Include file for AK8963 library. */
 #include "AKFS_Compass.h"
 
 /*** Constant definition ******************************************************/

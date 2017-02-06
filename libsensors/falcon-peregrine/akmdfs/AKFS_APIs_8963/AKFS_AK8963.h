@@ -1,5 +1,5 @@
 /******************************************************************************
- * $Id: AKFS_AK8975.h 580 2012-03-29 09:56:21Z yamada.rj $
+ * $Id: AKFS_AK8963.h 580 2012-03-29 09:56:21Z yamada.rj $
  ******************************************************************************
  *
  * Copyright (C) 2012 Asahi Kasei Microdevices Corporation, Japan
@@ -16,29 +16,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#ifndef AKFS_INC_AK8975_H
-#define AKFS_INC_AK8975_H
+#ifndef AKFS_INC_AK8963_H
+#define AKFS_INC_AK8963_H
 
 #include "AKFS_Device.h"
 
 /***** Constant definition ****************************************************/
-#define AK8975_BDATA_SIZE			8
+#define AK8963_BDATA_SIZE			8
 
-#define AK8975_HSENSE_DEFAULT		1
-#define AK8975_HSENSE_TARGET		0.3f
-#define AK8975_ASENSE_DEFAULT		720
-#define AK8975_ASENSE_TARGET		9.80665f
+#define AK8963_HSENSE_DEFAULT		1
+#define AK8963_HSENSE_TARGET		0.3f
+#define AK8963_ASENSE_DEFAULT		720
+#define AK8963_ASENSE_TARGET		9.80665f
 
-#define AK8975_HDATA_CONVERTER(hi, low, asa) \
+#define AK8963_HDATA_CONVERTER(hi, low, asa) \
 	(AKFLOAT)((int16)((((uint16)(hi))<<8)+(uint16)(low))*(((asa)/256.0f) + 0.5f))
 
-#define AK8975_ST_ERROR(st)   (((st)&0x09) != 0x01)
+#define AK8963_ST_ERROR(st)   (((st)&0x09) != 0x01)
 
 /***** Type declaration *******************************************************/
 
 /***** Prototype of function **************************************************/
 AKLIB_C_API_START
-int16 AKFS_DecompAK8975(
+int16 AKFS_DecompAK8963(
 	const	int16		mag[3],
 	const	int16		status,
 	const	uint8vec*	asa,

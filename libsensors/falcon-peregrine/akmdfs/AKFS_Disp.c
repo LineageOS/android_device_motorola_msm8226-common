@@ -24,7 +24,7 @@
  */
 void Disp_StartMessage(void)
 {
-	ALOGI("AK8975 Daemon for Open Source v20120329.");
+	ALOGI("AK8963 Daemon for Open Source v20120329.");
 	ALOGI("Debug: %s", ((ENABLE_AKMDEBUG)?("ON"):("OFF")));
 	ALOGI("Debug level: %d", DBG_LEVEL);
 }
@@ -34,7 +34,7 @@ void Disp_StartMessage(void)
  */
 void Disp_EndMessage(int ret)
 {
-	ALOGI("AK8975 for Android end (%d).", ret);
+	ALOGI("AK8963 for Android end (%d).", ret);
 }
 
 /*!
@@ -65,7 +65,7 @@ MODE Menu_Main(void)
 	memset(msg, 0, sizeof(msg));
 
 	AKMDEBUG(DBG_LEVEL1,
-	" --------------------  AK8975 Console Application -------------------- \n"
+	" --------------------  AK8963 Console Application -------------------- \n"
 	"   1. Start measurement. \n"
 	"   2. Self-test. \n"
 	"   Q. Quit application. \n"

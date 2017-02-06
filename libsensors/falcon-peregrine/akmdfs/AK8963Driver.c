@@ -1,5 +1,5 @@
 /******************************************************************************
- * $Id: AK8975Driver.c 580 2012-03-29 09:56:21Z yamada.rj $
+ * $Id: AK8963Driver.c 580 2012-03-29 09:56:21Z yamada.rj $
  ******************************************************************************
  *
  * Copyright (C) 2012 Asahi Kasei Microdevices Corporation, Japan
@@ -18,9 +18,9 @@
  */
 #include <fcntl.h>
 #include "AKFS_Common.h"
-#include "AK8975Driver.h"
+#include "AK8963Driver.h"
 
-#define MSENSOR_NAME		"/dev/akm8975_dev"
+#define MSENSOR_NAME		"/dev/akm8963_dev"
 
 static int s_fdDev = -1;
 
@@ -59,7 +59,7 @@ void AKD_DeinitDevice(void)
 }
 
 /*!
- Writes data to a register of the AK8975.  When more than one byte of data is
+ Writes data to a register of the AK8963.  When more than one byte of data is
  specified, the data is written in contiguous locations starting at an address
  specified in \a address.
  @return If this function succeeds, the return value is #AKD_SUCCESS. Otherwise
@@ -113,7 +113,7 @@ int16_t AKD_TxData(
 }
 
 /*!
- Acquires data from a register or the EEPROM of the AK8975.
+ Acquires data from a register or the EEPROM of the AK8963.
  @return If this function succeeds, the return value is #AKD_SUCCESS. Otherwise
  the return value is #AKD_FAIL.
  @param[in] address Specify the address of a register from which data is to be
@@ -166,7 +166,7 @@ int16_t AKD_RxData(
 }
 
 /*!
- Acquire magnetic data from AK8975. If measurement is not done, this function
+ Acquire magnetic data from AK8963. If measurement is not done, this function
  waits until measurement completion.
  @return If this function succeeds, the return value is #AKD_SUCCESS. Otherwise
  the return value is #AKD_FAIL.
@@ -239,11 +239,11 @@ int AKD_GetCloseStatus(int* status)
 }
 
 /*!
- Set AK8975 to the specific mode.
+ Set AK8963 to the specific mode.
  @return If this function succeeds, the return value is #AKD_SUCCESS. Otherwise
  the return value is #AKD_FAIL.
- @param[in] mode This value should be one of the AK8975_Mode which is defined in
- akm8975.h file.
+ @param[in] mode This value should be one of the AK8963_Mode which is defined in
+ akm8963.h file.
  */
 int16_t AKD_SetMode(const BYTE mode)
 {
