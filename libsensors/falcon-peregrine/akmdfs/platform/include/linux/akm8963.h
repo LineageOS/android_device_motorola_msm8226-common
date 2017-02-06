@@ -10,7 +10,7 @@
 
 #define SENSOR_DATA_SIZE	8
 #define YPR_DATA_SIZE		12
-#define RWBUF_SIZE			16
+#define RWBUF_SIZE		16
 
 #define ACC_DATA_FLAG		0
 #define MAG_DATA_FLAG		1
@@ -34,6 +34,7 @@
 #define	AK8963_MODE_SELF_TEST	0x08
 #define	AK8963_MODE_FUSE_ACCESS	0x0F
 #define	AK8963_MODE_POWERDOWN	0x00
+
 /*! @}*/
 
 /*! \name AK8963 register address
@@ -50,8 +51,8 @@ Defines a register address of the AK8963.*/
 #define AK8963_REG_HZL		0x07
 #define AK8963_REG_HZH		0x08
 #define AK8963_REG_ST2		0x09
-#define AK8963_REG_CNTL		0x0A
-#define AK8963_REG_RSV		0x0B
+#define AK8963_REG_CNTL1	0x0A
+#define AK8963_REG_CNTL2	0x0B
 #define AK8963_REG_ASTC		0x0C
 #define AK8963_REG_TS1		0x0D
 #define AK8963_REG_TS2		0x0E
@@ -79,11 +80,15 @@ Defines a read-only address of the fuse ROM of the AK8963.*/
 #define ECS_IOCTL_GET_CLOSE_STATUS  _IOR(AKMIO, 0x07, int)
 #define ECS_IOCTL_GET_DELAY         _IOR(AKMIO, 0x08, long long int[AKM_NUM_SENSORS])
 #define ECS_IOCTL_GET_LAYOUT        _IOR(AKMIO, 0x09, char)
-#define ECS_IOCTL_GET_ACCEL			_IOR(AKMIO, 0x30, short[3])
+#define ECS_IOCTL_GET_OUTBIT        _IOR(AKMIO, 0x0B, char)
+#define ECS_IOCTL_RESET             _IO(AKMIO, 0x0C)
+#define ECS_IOCTL_GET_ACCEL         _IOR(AKMIO, 0x30, short[3])
 
 struct akm8963_platform_data {
 	char layout;
-	int gpio_DRDY;
+	char outbit;
+	int gpio_IRQ;
+	int gpio_RST;
 };
 
 #endif
