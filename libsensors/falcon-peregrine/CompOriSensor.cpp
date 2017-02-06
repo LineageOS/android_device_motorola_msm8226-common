@@ -113,6 +113,9 @@ int CompOriSensor::setDelay(int32_t handle, int64_t ns)
         return -EINVAL;
     }
 
+    if (ns < MAG_MIN_DELAY_NS)
+        ns = MAG_MIN_DELAY_NS;
+
     fd = open(delay_path, O_RDWR);
     if (fd >= 0) {
         char buf[80];
