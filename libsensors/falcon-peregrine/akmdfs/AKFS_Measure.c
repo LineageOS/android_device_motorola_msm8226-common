@@ -297,7 +297,7 @@ void AKFS_MeasureLoop(void)
 
 	while (g_stopRequest != AKM_TRUE) {
 		/* Beginning time */
-		if (clock_gettime(CLOCK_MONOTONIC, &tsstart) < 0) {
+		if (clock_gettime(CLOCK_BOOTTIME, &tsstart) < 0) {
 			AKMERROR;
 			goto MEASURE_END;
 		}
@@ -377,7 +377,7 @@ void AKFS_MeasureLoop(void)
 		AKFS_OutputResult(flag, &sv_acc, &sv_mag, &sv_ori);
 
 		/* Ending time */
-		if (clock_gettime(CLOCK_MONOTONIC, &tsend) < 0) {
+		if (clock_gettime(CLOCK_BOOTTIME, &tsend) < 0) {
 			AKMERROR;
 			goto MEASURE_END;
 		}
