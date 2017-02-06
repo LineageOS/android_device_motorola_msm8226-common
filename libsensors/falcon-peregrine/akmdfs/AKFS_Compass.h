@@ -23,15 +23,15 @@
 #include "AKFS_CSpec.h"
 
 #ifdef WIN32
-#include "AK8975_LinuxDriver.h"
+#include "AK8963_LinuxDriver.h"
 #else
-#include "AK8975Driver.h"
+#include "AK8963Driver.h"
 #endif
 
 /****************************************/
-/* Include files for AK8975 library.    */
+/* Include files for AK8963 library.    */
 /****************************************/
-#include "AKFS_AK8975.h"
+#include "AKFS_AK8963.h"
 #include "AKFS_Configure.h"
 #include "AKFS_AOC.h"
 #include "AKFS_Device.h"
@@ -50,8 +50,8 @@ typedef struct _AKSENSOR_DATA{
 } AKSENSOR_DATA;
 
 /*! A parameter structure. */
-typedef struct _AK8975PRMS{
-	/* Variables for Decomp8975. */
+typedef struct _AK8963PRMS{
+	/* Variables for Decomp8963. */
 	AKFVEC			mfv_hdata[AKFS_HDATA_SIZE];
 	uint8vec		mi_asa;
 	uint8			mi_st;
@@ -85,7 +85,7 @@ typedef struct _AK8975PRMS{
 	AKFVEC			mfv_avec;
 	int16			mi_hstatus;
 
-} AK8975PRMS;
+} AK8963PRMS;
 
 #endif
 

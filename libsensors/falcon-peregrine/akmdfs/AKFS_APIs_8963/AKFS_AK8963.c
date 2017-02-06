@@ -1,5 +1,5 @@
 /******************************************************************************
- * $Id: AKFS_AK8975.c 580 2012-03-29 09:56:21Z yamada.rj $
+ * $Id: AKFS_AK8963.c 580 2012-03-29 09:56:21Z yamada.rj $
  ******************************************************************************
  *
  * Copyright (C) 2012 Asahi Kasei Microdevices Corporation, Japan
@@ -16,12 +16,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#include "AKFS_AK8975.h"
+#include "AKFS_AK8963.h"
 #include "AKFS_Device.h"
 
 /*!
  */
-int16 AKFS_DecompAK8975(
+int16 AKFS_DecompAK8963(
 	const	int16		mag[3],
 	const	int16		status,
 	const	uint8vec*	asa,
@@ -30,7 +30,7 @@ int16 AKFS_DecompAK8975(
 )
 {
 	/* put st1 and st2 value */
-	if (AK8975_ST_ERROR(status)) {
+	if (AK8963_ST_ERROR(status)) {
 		return AKFS_ERROR;
 	}
 

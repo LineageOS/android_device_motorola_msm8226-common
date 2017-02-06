@@ -22,10 +22,10 @@
 #include "AKFS_APIs.h"
 
 #ifdef WIN32
-#include "AK8975_LinuxDriver.h"
+#include "AK8963_LinuxDriver.h"
 #endif
 
-static AK8975PRMS g_prms;
+static AK8963PRMS g_prms;
 
 /*!
   Initialize library. At first, 0 is set to all parameters.  After that, some
@@ -45,16 +45,16 @@ int16 AKFS_Init(
 	AKMDATA(AKMDATA_DUMP, "%s: hpat=%d, r[0]=0x%02X, r[1]=0x%02X, r[2]=0x%02X\n",
 		__FUNCTION__, hpat, regs[0], regs[1], regs[2]);
 
-	/* Set 0 to the AK8975 structure. */
-	memset(&g_prms, 0, sizeof(AK8975PRMS));
+	/* Set 0 to the AK8963 structure. */
+	memset(&g_prms, 0, sizeof(AK8963PRMS));
 
 	/* Sensitivity */
-	g_prms.mfv_hs.u.x = AK8975_HSENSE_DEFAULT;
-	g_prms.mfv_hs.u.y = AK8975_HSENSE_DEFAULT;
-	g_prms.mfv_hs.u.z = AK8975_HSENSE_DEFAULT;
-	g_prms.mfv_as.u.x = AK8975_ASENSE_DEFAULT;
-	g_prms.mfv_as.u.y = AK8975_ASENSE_DEFAULT;
-	g_prms.mfv_as.u.z = AK8975_ASENSE_DEFAULT;
+	g_prms.mfv_hs.u.x = AK8963_HSENSE_DEFAULT;
+	g_prms.mfv_hs.u.y = AK8963_HSENSE_DEFAULT;
+	g_prms.mfv_hs.u.z = AK8963_HSENSE_DEFAULT;
+	g_prms.mfv_as.u.x = AK8963_ASENSE_DEFAULT;
+	g_prms.mfv_as.u.y = AK8963_ASENSE_DEFAULT;
+	g_prms.mfv_as.u.z = AK8963_ASENSE_DEFAULT;
 
 	/* Initialize variables that initial value is not 0. */
 	g_prms.mi_hnaveV = CSPEC_HNAVE_V;
@@ -167,7 +167,7 @@ int16 AKFS_Get_MAGNETIC_FIELD(
 
 	/* Decomposition */
 	/* Sensitivity adjustment, i.e. multiply ASA, is done in this function. */
-	akret = AKFS_DecompAK8975(
+	akret = AKFS_DecompAK8963(
 		mag,
 		status,
 		&g_prms.mi_asa,
@@ -205,7 +205,7 @@ int16 AKFS_Get_MAGNETIC_FIELD(
 		1,
 		&g_prms.mfv_ho,
 		&g_prms.mfv_hs,
-		AK8975_HSENSE_TARGET,
+		AK8963_HSENSE_TARGET,
 		AKFS_HDATA_SIZE,
 		g_prms.mfv_hvbuf
 	);
@@ -300,7 +300,7 @@ int16 AKFS_Get_ACCELEROMETER(
 		1,
 		&g_prms.mfv_ao,
 		&g_prms.mfv_as,
-		AK8975_ASENSE_TARGET,
+		AK8963_ASENSE_TARGET,
 		AKFS_ADATA_SIZE,
 		g_prms.mfv_avbuf
 	);
@@ -322,7 +322,7 @@ int16 AKFS_Get_ACCELEROMETER(
 	}
 
 	/* Adjust coordination */
-	/* It is not needed. Because, the data from AK8975 driver is already
+	/* It is not needed. Because, the data from AK8963 driver is already
 	   follows Android coordinate system. */
 
 	*vx = g_prms.mfv_avec.u.x;

@@ -17,9 +17,9 @@
  * limitations under the License.
  */
 #ifdef WIN32
-#include "AK8975_LinuxDriver.h"
+#include "AK8963_LinuxDriver.h"
 #else
-#include "AK8975Driver.h"
+#include "AK8963Driver.h"
 #endif
 
 #include "AKFS_Measure.h"
@@ -33,24 +33,24 @@
   @param[out] regs The read ASA values. When this function succeeds, ASAX value
    is saved in regs[0], ASAY is saved in regs[1], ASAZ is saved in regs[2].
  */
-int16 AKFS_ReadAK8975FUSEROM(
+int16 AKFS_ReadAK8963FUSEROM(
 		uint8	regs[3]
 )
 {
 	/* Set to FUSE ROM access mode */
-	if (AKD_SetMode(AK8975_MODE_FUSE_ACCESS) != AKD_SUCCESS) {
+	if (AKD_SetMode(AK8963_MODE_FUSE_ACCESS) != AKD_SUCCESS) {
 		AKMERROR;
 		return AKM_FAIL;
 	}    
 
 	/* Read values. ASAX, ASAY, ASAZ */
-	if (AKD_RxData(AK8975_FUSE_ASAX, regs, 3) != AKD_SUCCESS) {
+	if (AKD_RxData(AK8963_FUSE_ASAX, regs, 3) != AKD_SUCCESS) {
 		AKMERROR;
 		return AKM_FAIL;
 	}    
 
 	/* Set to PowerDown mode */
-	if (AKD_SetMode(AK8975_MODE_POWERDOWN) != AKD_SUCCESS) {
+	if (AKD_SetMode(AK8963_MODE_POWERDOWN) != AKD_SUCCESS) {
 		AKMERROR;
 		return AKM_FAIL;
 	}    
@@ -74,61 +74,61 @@ int16 AKFS_SelfTest(void)
 	int16	ret;
 
 	/* Set to FUSE ROM access mode */
-	if (AKD_SetMode(AK8975_MODE_FUSE_ACCESS) != AKD_SUCCESS) {
+	if (AKD_SetMode(AK8963_MODE_FUSE_ACCESS) != AKD_SUCCESS) {
 		AKMERROR;
 		return AKM_FAIL;
 	}
 
 	/* Read values from ASAX to ASAZ */
-	if (AKD_RxData(AK8975_FUSE_ASAX, asa, 3) != AKD_SUCCESS) {
+	if (AKD_RxData(AK8963_FUSE_ASAX, asa, 3) != AKD_SUCCESS) {
 		AKMERROR;
 		return AKM_FAIL;
 	}
 
 	/* Set to PowerDown mode */
-	if (AKD_SetMode(AK8975_MODE_POWERDOWN) != AKD_SUCCESS) {
+	if (AKD_SetMode(AK8963_MODE_POWERDOWN) != AKD_SUCCESS) {
 		AKMERROR;
 		return AKM_FAIL;
 	}
 
 	/* Set to self-test mode */
 	i2cData[0] = 0x40;
-	if (AKD_TxData(AK8975_REG_ASTC, i2cData, 1) != AKD_SUCCESS) {
+	if (AKD_TxData(AK8963_REG_ASTC, i2cData, 1) != AKD_SUCCESS) {
 		AKMERROR;
 		return AKM_FAIL;
 	}
 
 	/* Set to Self-test mode */
-	if (AKD_SetMode(AK8975_MODE_SELF_TEST) != AKD_SUCCESS) {
+	if (AKD_SetMode(AK8963_MODE_SELF_TEST) != AKD_SUCCESS) {
 		AKMERROR;
 		return AKM_FAIL;
 	}
 
 	/*
 	   Wait for DRDY pin changes to HIGH.
-	   Get measurement data from AK8975
+	   Get measurement data from AK8963
 	 */
 	if (AKD_GetMagneticData(i2cData) != AKD_SUCCESS) {
 		AKMERROR;
 		return AKM_FAIL;
 	}
 
-	hdata[0] = AK8975_HDATA_CONVERTER(i2cData[2], i2cData[1], asa[0]);
-	hdata[1] = AK8975_HDATA_CONVERTER(i2cData[4], i2cData[3], asa[1]);
-	hdata[2] = AK8975_HDATA_CONVERTER(i2cData[6], i2cData[5], asa[2]);
+	hdata[0] = AK8963_HDATA_CONVERTER(i2cData[2], i2cData[1], asa[0]);
+	hdata[1] = AK8963_HDATA_CONVERTER(i2cData[4], i2cData[3], asa[1]);
+	hdata[2] = AK8963_HDATA_CONVERTER(i2cData[6], i2cData[5], asa[2]);
 
 	/* Test */
 	ret = 1;
-	if ((hdata[0] < AK8975_SELFTEST_MIN_X) ||
-		(AK8975_SELFTEST_MAX_X < hdata[0])) {
+	if ((hdata[0] < AK8963_SELFTEST_MIN_X) ||
+		(AK8963_SELFTEST_MAX_X < hdata[0])) {
 		ret = 0;
 	}
-	if ((hdata[1] < AK8975_SELFTEST_MIN_Y) ||
-		(AK8975_SELFTEST_MAX_Y < hdata[1])) {
+	if ((hdata[1] < AK8963_SELFTEST_MIN_Y) ||
+		(AK8963_SELFTEST_MAX_Y < hdata[1])) {
 		ret = 0;
 	}
-	if ((hdata[2] < AK8975_SELFTEST_MIN_Z) ||
-		(AK8975_SELFTEST_MAX_Z < hdata[2])) {
+	if ((hdata[2] < AK8963_SELFTEST_MIN_Z) ||
+		(AK8963_SELFTEST_MAX_Z < hdata[2])) {
 		ret = 0;
 	}
 
@@ -329,7 +329,7 @@ void AKFS_MeasureLoop(void)
 
 		if ((flag & MAG_DATA_READY) || (flag & ORI_DATA_READY)) {
 			/* Set to measurement mode  */
-			if (AKD_SetMode(AK8975_MODE_SNG_MEASURE) != AKD_SUCCESS) {
+			if (AKD_SetMode(AK8963_MODE_SNG_MEASURE) != AKD_SUCCESS) {
 				AKMERROR;
 				goto MEASURE_END;
 			}
@@ -397,7 +397,7 @@ void AKFS_MeasureLoop(void)
 
 MEASURE_END:
 	/* Set to PowerDown mode */
-	if (AKD_SetMode(AK8975_MODE_POWERDOWN) != AKD_SUCCESS) {
+	if (AKD_SetMode(AK8963_MODE_POWERDOWN) != AKD_SUCCESS) {
 		AKMERROR;
 		return;
 	}

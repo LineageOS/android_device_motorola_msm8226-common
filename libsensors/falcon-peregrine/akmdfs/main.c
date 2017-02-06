@@ -230,7 +230,7 @@ int main(int argc, char **argv)
 	}
 
 	/* OK, then start */
-	if (AKFS_ReadAK8975FUSEROM(regs) != AKM_SUCCESS) {
+	if (AKFS_ReadAK8963FUSEROM(regs) != AKM_SUCCESS) {
 		retValue = ERROR_READ_FUSE;
 		goto MAIN_QUIT;
 	}

@@ -36,11 +36,11 @@
   the output is undefined. Therefore, parameters which are possibly overwritten
   by this function should be initialized again. If function succeeds, the
   return value is #AKM_SUCCESS.
- @param[out] prms A pointer to #AK8975PRMS structure. Loaded parameter is
+ @param[out] prms A pointer to #AK8963PRMS structure. Loaded parameter is
   stored to the member of this structure.
  @param[in] path A path to the setting file.
  */
-int16 AKFS_LoadParameters(AK8975PRMS * prms, const char* path)
+int16 AKFS_LoadParameters(AK8963PRMS * prms, const char* path)
 {
 	int16 ret;
 	char buf[LOAD_BUF_SIZE];
@@ -96,11 +96,11 @@ int16 AKFS_LoadParameters(AK8975PRMS * prms, const char* path)
  @return If function fails, the return value is #AKM_FAIL. When function fails,
   the parameter file may collapsed. Therefore, the parameters file should be
   discarded. If function succeeds, the return value is #AKM_SUCCESS.
- @param[out] prms A pointer to #AK8975PRMS structure. Member variables are
+ @param[out] prms A pointer to #AK8963PRMS structure. Member variables are
   saved to the parameter file.
  @param[in] path A path to the setting file.
  */
-int16 AKFS_SaveParameters(AK8975PRMS *prms, const char* path)
+int16 AKFS_SaveParameters(AK8963PRMS *prms, const char* path)
 {
 	int16 ret = 1;
 	FILE *fp;

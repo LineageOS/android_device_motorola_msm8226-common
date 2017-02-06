@@ -19,7 +19,7 @@
 #ifndef AKFS_INC_APIS_H
 #define AKFS_INC_APIS_H
 
-/* Include files for AK8975 library. */
+/* Include files for AK8963 library. */
 #include "AKFS_Compass.h"
 
 /*** Constant definition ******************************************************/
