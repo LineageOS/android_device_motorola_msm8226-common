@@ -50,6 +50,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 LZMA_RAMDISK_TARGETS := recovery
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8226
+TARGET_KERNEL_CONFIG := moto8226_defconfig
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-smd"
