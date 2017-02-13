@@ -13,9 +13,6 @@
 # limitations under the License.
 
 import re
-import os
-
-TARGET_DIR = os.getenv('OUT')
 
 def FullOTA_Assertions(info):
   AddBootloaderAssertion(info, info.input_zip)
