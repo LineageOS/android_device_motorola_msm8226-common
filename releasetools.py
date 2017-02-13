@@ -22,6 +22,10 @@ def IncrementalOTA_Assertions(info):
   AddBootloaderAssertion(info, info.target_zip)
 
 
+def FullOTA_PostValidate(info):
+  ResizeSystem(info)
+
+
 def AddBootloaderAssertion(info, input_zip):
   android_info = input_zip.read("OTA/android-info.txt")
   m = re.search(r"require\s+version-bootloader\s*=\s*(\S+)", android_info)
@@ -30,3 +34,14 @@ def AddBootloaderAssertion(info, input_zip):
     if "*" not in bootloaders:
       info.script.AssertSomeBootloader(*bootloaders)
     info.metadata["pre-bootloader"] = m.group(1)
+
+
+def ResizeSystem(info):
+  if info.metadata["ota-type"] == "BLOCK":
+    fstab = info.info_dict.get("fstab", None)
+    system_block = fstab["/system"].device
+    # We copied verbatim an image that we already checked with e2fsck,
+    # there's no need to re-run it.
+    extra = 'run_program("/tmp/install/bin/resize2fs_static", "%s")' \
+            ' || print("Error: could not resize /system")' % system_block
+    info.script.AppendExtra(extra)

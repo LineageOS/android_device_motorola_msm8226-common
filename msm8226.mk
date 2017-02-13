@@ -177,6 +177,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshims_thermal
 
+# system partition resize
+PRODUCT_PACKAGES += \
+    resize2fs_static
+
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
