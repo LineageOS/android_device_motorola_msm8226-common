@@ -2,6 +2,7 @@
 <carrier_config_list>
     <carrier_config>
         <boolean name="carrier_settings_enable_bool" value="false" />
+        <boolean name="hide_ims_apn_bool" value="true" />
         <boolean name="show_apn_setting_cdma_bool" value="true" />
     </carrier_config>
 </carrier_config_list>
