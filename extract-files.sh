@@ -66,10 +66,6 @@ else
 
     extract "$MY_DIR"/proprietary-files.txt "$SRC"
 
-    if [ ! -s "$CM_ROOT"/vendor/qcom/binaries/msm8974/graphics/graphics-vendor.mk ]; then
-        extract "$CM_ROOT"/device/qcom/common/extractors/graphics-msm8974.txt "$SRC"
-    fi
-
     if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
         # Reinitialize the helper for device
         setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT" false "$CLEANUP"
