@@ -50,8 +50,10 @@ public class GesturePreferenceFragment extends PreferenceFragment {
     }
 
     private boolean enableDoze(boolean enable) {
-        return Settings.Secure.putInt(getActivity().getContentResolver(),
+        boolean result = Settings.Secure.putInt(getActivity().getContentResolver(),
                 Settings.Secure.DOZE_ENABLED, enable ? 1 : 0);
+        CMActionReceiver.notifyChanged(getActivity());
+        return result;
     }
 
     private boolean isDozeEnabled() {

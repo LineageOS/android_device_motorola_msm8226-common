@@ -25,6 +25,7 @@ public class GesturePreferenceActivity extends SettingsDrawerActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        showMenuIcon();
         getFragmentManager().beginTransaction()
                 .replace(R.id.content_frame, new GesturePreferenceFragment()).commit();
     }
