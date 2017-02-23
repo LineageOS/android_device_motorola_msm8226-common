@@ -13,8 +13,9 @@
         android:label="@string/device_settings_app_name"
         android:persistent="true">
 
-        <receiver android:name="com.cyanogenmod.cmactions.BootCompletedReceiver">
+        <receiver android:name=".CMActionsReceiver">
             <intent-filter>
+                <action android:name="cyanogenmod.intent.action.UPDATE_PREFERENCE" />
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -29,14 +30,15 @@
             android:label="@string/screen_gestures_panel_title"
             android:theme="@style/CMActions">
             <intent-filter>
-                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+                <action android:name="org.cyanogenmod.settings.device.DOZE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.device" />
+                android:name="org.cyanogenmod.settings.summary.receiver"
+                android:value="com.cyanogenmod.cmactions.CMActionsReceiver" />
             <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_gestures" />
+                android:name="org.cyanogenmod.settings.summary.key"
+                android:value="doze_device_settings" />
         </activity>
 
     </application>

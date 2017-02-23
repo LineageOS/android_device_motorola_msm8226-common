@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -50,8 +51,10 @@ public class GesturePreferenceFragment extends PreferenceFragment {
     }
 
     private boolean enableDoze(boolean enable) {
-        return Settings.Secure.putInt(getActivity().getContentResolver(),
+        boolean result = Settings.Secure.putInt(getActivity().getContentResolver(),
                 Settings.Secure.DOZE_ENABLED, enable ? 1 : 0);
+        CMActionsReceiver.notifyChanged(getActivity());
+        return result;
     }
 
     private boolean isDozeEnabled() {
