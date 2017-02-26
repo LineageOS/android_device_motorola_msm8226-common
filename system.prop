@@ -9,6 +9,7 @@ audio.offload.pcm.24bit.enable=false
 audio.offload.buffer.size.kb=32
 audio.offload.gapless.enabled=true
 audio.offload.video=false
+ro.audio.offload_wakelock=false
 
 persist.audio.calfile0=/etc/Bluetooth_cal.acdb
 persist.audio.calfile1=/etc/General_cal.acdb
