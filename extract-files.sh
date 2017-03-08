@@ -17,6 +17,8 @@
 
 set -e
 
+INITIAL_COPYRIGHT_YEAR=2013
+
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
@@ -57,6 +59,7 @@ if [ -n "$SETUP" ]; then
 
     if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
         # Initalize the helper for device
+        INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
         setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT" false false
         "$MY_DIR"/setup-makefiles.sh false
     fi
@@ -68,6 +71,7 @@ else
 
     if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
         # Reinitialize the helper for device
+        INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
         setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT" false "$CLEANUP"
 
         extract "$MY_DIR"/../$DEVICE/proprietary-files.txt "$SRC"
