@@ -17,6 +17,8 @@
 
 set -e
 
+INITIAL_COPYRIGHT_YEAR=2013
+
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
@@ -43,6 +45,8 @@ write_makefiles "$MY_DIR"/proprietary-files.txt
 write_footers
 
 if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
+    INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
+
     # Reinitialize the helper for device
     setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT" "false" "$1"
 
