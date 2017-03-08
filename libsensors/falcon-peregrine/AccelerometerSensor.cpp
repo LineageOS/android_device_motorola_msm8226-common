@@ -180,6 +180,7 @@ int AccelerometerSensor::setDelay(int32_t handle, int64_t ns)
         ret = write(fd, buf, strlen(buf)+1);
         if (ret < 0) {
             ALOGE("AccelerometerSensor: could not write delay_acc");
+            close(fd);
             return ret;
         }
         close(fd);

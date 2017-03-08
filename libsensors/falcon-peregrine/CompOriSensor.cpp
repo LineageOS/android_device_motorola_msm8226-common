@@ -86,6 +86,7 @@ int CompOriSensor::enable(int32_t handle, int en)
     if (ret < 0) {
         ALOGE("CompOriSensor: could not set state of handle %d to %d",
               handle, en);
+        close(fd);
         return ret;
     }
     close(fd);
