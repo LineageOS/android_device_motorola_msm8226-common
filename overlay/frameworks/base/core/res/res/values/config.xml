@@ -418,7 +418,4 @@
 
     <!-- Whether to enable HumanInteractionController by default -->
     <bool name="config_HICEnabledDefault">false</bool>
-
-    <!-- IpReachability monitor enable/Disable -->
-    <bool name="config_wifi_ipreachability_monitor">true</bool>
 </resources>
