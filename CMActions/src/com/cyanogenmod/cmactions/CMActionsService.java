@@ -137,7 +137,7 @@ public class CMActionsService extends Service {
     }
 
     private void launchDozePulse() {
-        mContext.sendBroadcastAsUser(new Intent(DOZE_INTENT), UserHandle.ALL);
+        mContext.sendBroadcastAsUser(new Intent(DOZE_INTENT), UserHandle.CURRENT);
     }
 
     private boolean isInteractive() {
