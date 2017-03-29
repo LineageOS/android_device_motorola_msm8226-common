@@ -133,6 +133,8 @@ public class CMActionsService extends Service {
     public void onDestroy() {
         if (DEBUG) Log.d(TAG, "CMActionsService Stopped");
         mContext.unregisterReceiver(mScreenStateReceiver);
+        mSensor.setProxEnabled(false);
+        holdWakelock(false);
     }
 
     @Override
