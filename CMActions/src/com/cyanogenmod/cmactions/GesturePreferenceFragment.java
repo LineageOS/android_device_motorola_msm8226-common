@@ -31,6 +31,7 @@ public class GesturePreferenceFragment extends PreferenceFragment implements
     private SwitchPreference mAmbientDisplayPreference;
     private SwitchPreference mPocketPreference;
     private SwitchPreference mHandwavePreference;
+    private SwitchPreference mHandwaveFlatPreference;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -47,6 +48,9 @@ public class GesturePreferenceFragment extends PreferenceFragment implements
                 (SwitchPreference) findPreference(Constants.PREF_GESTURE_HAND_WAVE_KEY);
         mHandwavePreference.setEnabled(dozeEnabled);
         mHandwavePreference.setOnPreferenceChangeListener(this);
+        mHandwaveFlatPreference =
+                (SwitchPreference) findPreference(Constants.PREF_GESTURE_HAND_WAVE_FLAT_KEY);
+        mHandwaveFlatPreference.setEnabled(dozeEnabled && mHandwavePreference.isChecked());
     }
 
     private boolean enableDoze(boolean enable) {
@@ -78,6 +82,7 @@ public class GesturePreferenceFragment extends PreferenceFragment implements
             if (ret) {
                 mPocketPreference.setEnabled(enable);
                 mHandwavePreference.setEnabled(enable);
+                mHandwaveFlatPreference.setEnabled(mHandwavePreference.isEnabled());
 
                 boolean needsService =
                         mPocketPreference.isChecked() || mHandwavePreference.isChecked();
@@ -97,6 +102,7 @@ public class GesturePreferenceFragment extends PreferenceFragment implements
             if (!mPocketPreference.isChecked()) {
                 serviceEnabled(enable);
             }
+            mHandwaveFlatPreference.setEnabled(enable);
             return true;
         }
         return false;
