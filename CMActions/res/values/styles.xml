@@ -18,5 +18,22 @@
 <resources>
     <style name="CMActions" parent="@style/PreferenceThemeOverlay.v14.Material">
         <item name="preferenceTheme">@android:style/Theme.Material.Settings</item>
+        <item name="switchBarTheme">@style/ThemeOverlay.SwitchBar.Settings</item>
+        <item name="android:colorSecondary">@color/secondary_device_default_settings</item>
+    </style>
+
+    <style name="ThemeOverlay.SwitchBar.Settings" parent="@*android:style/ThemeOverlay.DeviceDefault.Dark.ActionBar.Accent">
+        <item name="switchBarMarginStart">@dimen/switchbar_subsettings_margin_start</item>
+        <item name="switchBarMarginEnd">@dimen/switchbar_subsettings_margin_end</item>
+        <item name="switchBarBackgroundColor">?android:attr/colorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Switch" parent="@android:style/TextAppearance.Material.Title" />
+
+    <style name="TextAppearance.Small" parent="@android:style/TextAppearance.Material.Small" />
+
+    <style name="TextAppearance.Small.SwitchBar">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">normal</item>
     </style>
 </resources>
