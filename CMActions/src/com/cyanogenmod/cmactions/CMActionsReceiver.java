@@ -19,6 +19,7 @@ package com.cyanogenmod.cmactions;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
 
@@ -36,7 +37,8 @@ public class CMActionsReceiver extends RemotePreferenceUpdater {
         super.onReceive(context, intent);
         if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
             if (DEBUG) Log.d(TAG, "Starting service");
-            context.startService(new Intent(context, CMActionsService.class));
+            context.startServiceAsUser(new Intent(context, CMActionsService.class),
+                    UserHandle.CURRENT);
         }
     }
 
