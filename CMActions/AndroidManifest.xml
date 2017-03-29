@@ -27,7 +27,7 @@
 
         <activity
             android:name=".GesturePreferenceActivity"
-            android:label="@string/screen_gestures_panel_title"
+            android:label="@string/ambient_display_title"
             android:theme="@style/CMActions">
             <intent-filter>
                 <action android:name="org.cyanogenmod.settings.device.DOZE_SETTINGS" />
