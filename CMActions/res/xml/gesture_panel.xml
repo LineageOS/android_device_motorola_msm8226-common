@@ -30,6 +30,12 @@
             android:summary="@string/hand_wave_gesture_summary" />
 
         <SwitchPreference
+            android:key="gesture_hand_wave_flat"
+            android:defaultValue="false"
+            android:title="Detect phone orientation"
+            android:summary="Pulse notifications only if the phone is on a flat surface" />
+
+        <SwitchPreference
             android:key="gesture_pocket"
             android:defaultValue="false"
             android:title="@string/pocket_gesture_title"
