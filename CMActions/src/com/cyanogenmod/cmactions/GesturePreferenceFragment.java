@@ -23,11 +23,8 @@ import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
 import android.provider.Settings;
 
-public class GesturePreferenceFragment extends PreferenceFragment {
-
-    private static final String KEY_AMBIENT_DISPLAY_ENABLE = "ambient_display_enable";
-    private static final String KEY_GESTURE_POCKET = "gesture_pocket";
-    private static final String KEY_GESTURE_HAND_WAVE = "gesture_hand_wave";
+public class GesturePreferenceFragment extends PreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
 
     private SwitchPreference mAmbientDisplayPreference;
     private SwitchPreference mPocketPreference;
@@ -38,15 +35,14 @@ public class GesturePreferenceFragment extends PreferenceFragment {
         addPreferencesFromResource(R.xml.gesture_panel);
         boolean dozeEnabled = isDozeEnabled();
         mAmbientDisplayPreference =
-            (SwitchPreference) findPreference(KEY_AMBIENT_DISPLAY_ENABLE);
-        // Read from DOZE_ENABLED secure setting
+                (SwitchPreference) findPreference(Constants.PREF_AMBIENT_DISPLAY_KEY);
         mAmbientDisplayPreference.setChecked(dozeEnabled);
-        mAmbientDisplayPreference.setOnPreferenceChangeListener(mAmbientDisplayPrefListener);
-        mPocketPreference =
-            (SwitchPreference) findPreference(KEY_GESTURE_POCKET);
+        mAmbientDisplayPreference.setOnPreferenceChangeListener(this);
+        mPocketPreference = (SwitchPreference) findPreference(Constants.PREF_GESTURE_POCKET_KEY);
         mPocketPreference.setEnabled(dozeEnabled);
+        mPocketPreference.setOnPreferenceChangeListener(this);
         mHandwavePreference =
-            (SwitchPreference) findPreference(KEY_GESTURE_HAND_WAVE);
+                (SwitchPreference) findPreference(Constants.PREF_GESTURE_HAND_WAVE_KEY);
         mHandwavePreference.setEnabled(dozeEnabled);
     }
 
@@ -62,10 +58,9 @@ public class GesturePreferenceFragment extends PreferenceFragment {
                 Settings.Secure.DOZE_ENABLED, 1) != 0;
     }
 
-    private Preference.OnPreferenceChangeListener mAmbientDisplayPrefListener =
-        new Preference.OnPreferenceChangeListener() {
-        @Override
-        public boolean onPreferenceChange(Preference preference, Object newValue) {
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference.equals(mAmbientDisplayPreference)) {
             boolean enable = (boolean) newValue;
             boolean ret = enableDoze(enable);
             if (ret) {
@@ -74,5 +69,6 @@ public class GesturePreferenceFragment extends PreferenceFragment {
             }
             return ret;
         }
-    };
+        return false;
+    }
 }

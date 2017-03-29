@@ -21,22 +21,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.UserHandle;
 import android.provider.Settings;
-import android.util.Log;
 
 import cyanogenmod.preference.RemotePreferenceUpdater;
 
 public class CMActionsReceiver extends RemotePreferenceUpdater {
 
-    private static final boolean DEBUG = false;
-    private static final String TAG = "CMActions";
-
-    private static final String DOZE_KEY = "doze_device_settings";
-
     @Override
     public void onReceive(final Context context, Intent intent) {
         super.onReceive(context, intent);
         if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
-            if (DEBUG) Log.d(TAG, "Starting service");
+            if (!isDozeEnabled(context)) {
+                return;
+            }
             context.startServiceAsUser(new Intent(context, CMActionsService.class),
                     UserHandle.CURRENT);
         }
@@ -44,10 +40,8 @@ public class CMActionsReceiver extends RemotePreferenceUpdater {
 
     @Override
     public String getSummary(Context context, String key) {
-        if (DOZE_KEY.equals(key)) {
-            boolean enabled = Settings.Secure.getInt(context.getContentResolver(),
-                Settings.Secure.DOZE_ENABLED, 1) != 0;
-            if (enabled) {
+        if (Constants.DOZE_SETTINGS_TILE_KEY.equals(key)) {
+            if (isDozeEnabled(context)) {
                 return context.getString(R.string.ambient_display_summary_on);
             } else {
                 return context.getString(R.string.ambient_display_summary_off);
@@ -56,7 +50,12 @@ public class CMActionsReceiver extends RemotePreferenceUpdater {
         return null;
     }
 
+    private boolean isDozeEnabled(Context context) {
+        return Settings.Secure.getInt(context.getContentResolver(),
+                Settings.Secure.DOZE_ENABLED, 1) != 0;
+    }
+
     public static void notifyChanged(Context context) {
-        notifyChanged(context, DOZE_KEY);
+        notifyChanged(context, Constants.DOZE_SETTINGS_TILE_KEY);
     }
 }
