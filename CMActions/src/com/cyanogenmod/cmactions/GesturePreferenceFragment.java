@@ -24,22 +24,30 @@ import android.support.v14.preference.PreferenceFragment;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
 import android.provider.Settings;
+import android.widget.Switch;
+
+import com.cyanogenmod.cmactions.widget.SwitchBar;
 
 public class GesturePreferenceFragment extends PreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, SwitchBar.OnSwitchChangeListener {
 
-    private SwitchPreference mAmbientDisplayPreference;
+    private SwitchBar mSwitchBar;
     private SwitchPreference mPocketPreference;
     private SwitchPreference mHandwavePreference;
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        mSwitchBar = ((GesturePreferenceActivity) getActivity()).getSwitchBar();
+        mSwitchBar.setChecked(isDozeEnabled());
+        mSwitchBar.show();
+        mSwitchBar.addOnSwitchChangeListener(this);
+    }
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.gesture_panel);
         boolean dozeEnabled = isDozeEnabled();
-        mAmbientDisplayPreference =
-                (SwitchPreference) findPreference(Constants.PREF_AMBIENT_DISPLAY_KEY);
-        mAmbientDisplayPreference.setChecked(dozeEnabled);
-        mAmbientDisplayPreference.setOnPreferenceChangeListener(this);
         mPocketPreference = (SwitchPreference) findPreference(Constants.PREF_GESTURE_POCKET_KEY);
         mPocketPreference.setEnabled(dozeEnabled);
         mPocketPreference.setOnPreferenceChangeListener(this);
@@ -73,21 +81,19 @@ public class GesturePreferenceFragment extends PreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         boolean enable = (boolean) newValue;
-        if (preference.equals(mAmbientDisplayPreference)) {
-            if (!enableDoze(enable)) {
-                return false;
-            }
-            mPocketPreference.setEnabled(enable);
-            mHandwavePreference.setEnabled(enable);
-            return true;
-        } else if (preference.equals(mPocketPreference)) {
+        if (preference.equals(mPocketPreference)) {
             serviceEnabled(enable || mHandwavePreference.isChecked());
             return true;
         } else if (preference.equals(mHandwavePreference)) {
             serviceEnabled(enable || mPocketPreference.isChecked());
             return true;
         }
-
         return false;
+    }
+
+    @Override
+    public void onSwitchChanged(Switch switchView, boolean isChecked) {
+        enableDoze(isChecked);
+        getPreferenceScreen().setEnabled(isChecked);
     }
 }

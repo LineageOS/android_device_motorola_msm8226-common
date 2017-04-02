@@ -20,7 +20,6 @@ public class Constants {
 
     public static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
 
-    public static final String PREF_AMBIENT_DISPLAY_KEY = "ambient_display_enable";
     public static final String PREF_GESTURE_HAND_WAVE_KEY = "gesture_hand_wave";
     public static final String PREF_GESTURE_POCKET_KEY = "gesture_pocket";
 
