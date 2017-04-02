@@ -17,7 +17,9 @@
 
 package com.cyanogenmod.cmactions;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.support.v14.preference.PreferenceFragment;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
@@ -44,6 +46,7 @@ public class GesturePreferenceFragment extends PreferenceFragment implements
         mHandwavePreference =
                 (SwitchPreference) findPreference(Constants.PREF_GESTURE_HAND_WAVE_KEY);
         mHandwavePreference.setEnabled(dozeEnabled);
+        mHandwavePreference.setOnPreferenceChangeListener(this);
     }
 
     private boolean enableDoze(boolean enable) {
@@ -58,17 +61,33 @@ public class GesturePreferenceFragment extends PreferenceFragment implements
                 Settings.Secure.DOZE_ENABLED, 1) != 0;
     }
 
+    private void serviceEnabled(boolean enable) {
+        Intent intent = new Intent(getContext(), CMActionsService.class);
+        if (enable) {
+            getContext().startServiceAsUser(intent, UserHandle.CURRENT);
+        } else {
+            getContext().stopServiceAsUser(intent, UserHandle.CURRENT);
+        }
+    }
+
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        boolean enable = (boolean) newValue;
         if (preference.equals(mAmbientDisplayPreference)) {
-            boolean enable = (boolean) newValue;
-            boolean ret = enableDoze(enable);
-            if (ret) {
-                mPocketPreference.setEnabled(enable);
-                mHandwavePreference.setEnabled(enable);
+            if (!enableDoze(enable)) {
+                return false;
             }
-            return ret;
+            mPocketPreference.setEnabled(enable);
+            mHandwavePreference.setEnabled(enable);
+            return true;
+        } else if (preference.equals(mPocketPreference)) {
+            serviceEnabled(enable || mHandwavePreference.isChecked());
+            return true;
+        } else if (preference.equals(mHandwavePreference)) {
+            serviceEnabled(enable || mPocketPreference.isChecked());
+            return true;
         }
+
         return false;
     }
 }

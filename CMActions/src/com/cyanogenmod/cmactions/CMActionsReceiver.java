@@ -20,6 +20,8 @@ package com.cyanogenmod.cmactions;
 import android.content.Context;
 import android.content.Intent;
 import android.os.UserHandle;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.provider.Settings;
 
 import cyanogenmod.preference.RemotePreferenceUpdater;
@@ -30,12 +32,17 @@ public class CMActionsReceiver extends RemotePreferenceUpdater {
     public void onReceive(final Context context, Intent intent) {
         super.onReceive(context, intent);
         if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
-            if (!isDozeEnabled(context)) {
-                return;
+            if (areGesturesEnabled(context)) {
+                context.startServiceAsUser(new Intent(context, CMActionsService.class),
+                        UserHandle.CURRENT);
             }
-            context.startServiceAsUser(new Intent(context, CMActionsService.class),
-                    UserHandle.CURRENT);
         }
+    }
+
+    private boolean areGesturesEnabled(Context context) {
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+        return sharedPrefs.getBoolean(Constants.PREF_GESTURE_HAND_WAVE_KEY, false) ||
+                sharedPrefs.getBoolean(Constants.PREF_GESTURE_POCKET_KEY, false);
     }
 
     @Override

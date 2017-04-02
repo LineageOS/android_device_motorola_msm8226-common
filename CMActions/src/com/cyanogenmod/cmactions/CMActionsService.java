@@ -23,10 +23,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.database.ContentObserver;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.net.Uri;
+import android.os.Handler;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.os.UserHandle;
@@ -47,6 +50,19 @@ public class CMActionsService extends Service {
 
     private boolean mHandwaveGestureEnabled = false;
     private boolean mPocketGestureEnabled = false;
+
+    private boolean mScreenStateReceiverAdded = false;
+
+    private final ContentObserver mDozeContentObserver = new ContentObserver(new Handler()) {
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            if (isDozeEnabled()) {
+                addScreenStateReceiver();
+            } else {
+                removeScreenStateReceiver();
+            }
+        }
+    };
 
     class MotoProximitySensor implements SensorEventListener {
         private SensorManager mSensorManager;
@@ -121,12 +137,17 @@ public class CMActionsService extends Service {
         mPocketGestureEnabled = sharedPrefs.getBoolean(Constants.PREF_GESTURE_POCKET_KEY, false);
         sharedPrefs.registerOnSharedPreferenceChangeListener(mPrefListener);
 
-        if (!isInteractive() && areGesturesEnabled()) {
+        getContentResolver().registerContentObserver(
+                Settings.Secure.getUriFor(Settings.Secure.DOZE_ENABLED),
+                false, mDozeContentObserver);
+
+        if (!isInteractive() && areGesturesEnabled() && isDozeEnabled()) {
             mSensor.setProxEnabled(true);
         }
-        IntentFilter screenStateFilter = new IntentFilter(Intent.ACTION_SCREEN_ON);
-        screenStateFilter.addAction(Intent.ACTION_SCREEN_OFF);
-        mContext.registerReceiver(mScreenStateReceiver, screenStateFilter);
+
+        if (areGesturesEnabled()) {
+            addScreenStateReceiver();
+        }
     }
 
     @Override
@@ -134,7 +155,8 @@ public class CMActionsService extends Service {
         if (DEBUG) Log.d(TAG, "CMActionsService Stopped");
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(mContext);
         sharedPrefs.unregisterOnSharedPreferenceChangeListener(mPrefListener);
-        mContext.unregisterReceiver(mScreenStateReceiver);
+        getContentResolver().unregisterContentObserver(mDozeContentObserver);
+        removeScreenStateReceiver();
         mSensor.setProxEnabled(false);
         holdWakelock(false);
     }
@@ -150,6 +172,29 @@ public class CMActionsService extends Service {
         return null;
     }
 
+    private boolean isDozeEnabled() {
+        return Settings.Secure.getInt(getContentResolver(),
+                Settings.Secure.DOZE_ENABLED, 1) != 0;
+    }
+
+    private void addScreenStateReceiver() {
+        if (!mScreenStateReceiverAdded) {
+            if (DEBUG) Log.d(TAG, "Adding screen state receiver");
+            IntentFilter screenStateFilter = new IntentFilter(Intent.ACTION_SCREEN_ON);
+            screenStateFilter.addAction(Intent.ACTION_SCREEN_OFF);
+            mContext.registerReceiver(mScreenStateReceiver, screenStateFilter);
+            mScreenStateReceiverAdded = true;
+        }
+    }
+
+    private void removeScreenStateReceiver() {
+        if (mScreenStateReceiverAdded) {
+            if (DEBUG) Log.d(TAG, "Removing screen state receiver");
+            mContext.unregisterReceiver(mScreenStateReceiver);
+            mScreenStateReceiverAdded = false;
+        }
+    }
+
     private void launchDozePulse() {
         mContext.sendBroadcastAsUser(new Intent(Constants.DOZE_INTENT), UserHandle.CURRENT);
     }
@@ -159,9 +204,7 @@ public class CMActionsService extends Service {
     }
 
     private boolean areGesturesEnabled() {
-        return (mHandwaveGestureEnabled || mPocketGestureEnabled) &&
-                Settings.Secure.getInt(mContext.getContentResolver(),
-                        Settings.Secure.DOZE_ENABLED, 1) != 0;
+        return mHandwaveGestureEnabled || mPocketGestureEnabled;
     }
 
     private void holdWakelock(boolean hold) {
@@ -179,14 +222,14 @@ public class CMActionsService extends Service {
     private void onDisplayOn() {
         if (DEBUG) Log.d(TAG, "Display on");
         mSensor.setProxEnabled(false);
-        if (areGesturesEnabled()) {
+        if (areGesturesEnabled() && isDozeEnabled()) {
             holdWakelock(true);
         }
     }
 
     private void onDisplayOff() {
         if (DEBUG) Log.d(TAG, "Display off");
-        if (areGesturesEnabled()) {
+        if (areGesturesEnabled() && isDozeEnabled()) {
             mSensor.setProxEnabled(true);
         }
         holdWakelock(false);
@@ -217,7 +260,11 @@ public class CMActionsService extends Service {
                     }
 
                     if (areGesturesEnabled()) {
+                        addScreenStateReceiver();
                         holdWakelock(true);
+                    } else {
+                        removeScreenStateReceiver();
+                        holdWakelock(false);
                     }
                 }
             };
