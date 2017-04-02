@@ -132,6 +132,8 @@ public class CMActionsService extends Service {
     @Override
     public void onDestroy() {
         if (DEBUG) Log.d(TAG, "CMActionsService Stopped");
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(mContext);
+        sharedPrefs.unregisterOnSharedPreferenceChangeListener(mPrefListener);
         mContext.unregisterReceiver(mScreenStateReceiver);
         mSensor.setProxEnabled(false);
         holdWakelock(false);
