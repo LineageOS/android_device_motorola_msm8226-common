@@ -38,22 +38,21 @@ public class GesturePreferenceFragment extends PreferenceFragment implements
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        boolean isDozeEnabled = isDozeEnabled();
         mSwitchBar = ((GesturePreferenceActivity) getActivity()).getSwitchBar();
-        mSwitchBar.setChecked(isDozeEnabled());
+        mSwitchBar.setChecked(isDozeEnabled);
         mSwitchBar.show();
         mSwitchBar.addOnSwitchChangeListener(this);
+        getPreferenceScreen().setEnabled(isDozeEnabled);
     }
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.gesture_panel);
-        boolean dozeEnabled = isDozeEnabled();
         mPocketPreference = (SwitchPreference) findPreference(Constants.PREF_GESTURE_POCKET_KEY);
-        mPocketPreference.setEnabled(dozeEnabled);
         mPocketPreference.setOnPreferenceChangeListener(this);
         mHandwavePreference =
                 (SwitchPreference) findPreference(Constants.PREF_GESTURE_HAND_WAVE_KEY);
-        mHandwavePreference.setEnabled(dozeEnabled);
         mHandwavePreference.setOnPreferenceChangeListener(this);
     }
 
