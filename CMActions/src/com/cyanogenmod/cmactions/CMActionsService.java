@@ -43,6 +43,8 @@ public class CMActionsService extends Service {
 
     private static final int POCKET_DELTA_NS = 1000 * 1000 * 1000;
 
+    private static final int INCLINATION_THS = 20;
+
     private Context mContext;
     private MotoProximitySensor mSensor;
     private PowerManager mPowerManager;
@@ -50,6 +52,7 @@ public class CMActionsService extends Service {
 
     private boolean mHandwaveGestureEnabled = false;
     private boolean mPocketGestureEnabled = false;
+    private boolean mHandwaveGestureFlatEnabled = false;
 
     private boolean mScreenStateReceiverAdded = false;
 
@@ -67,21 +70,44 @@ public class CMActionsService extends Service {
     class MotoProximitySensor implements SensorEventListener {
         private SensorManager mSensorManager;
         private Sensor mProxSensor;
+        private Sensor mAccelSensor;
         private boolean mProxEnabled = false;
+        private boolean mAccelEnabled = false;
 
         private boolean mSawNear = false;
         private long mInPocketTime = 0;
+        private boolean mPulseIfFlat = false;
 
         public MotoProximitySensor(Context context) {
             mSensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
             mProxSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+            mAccelSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         }
 
         @Override
         public void onSensorChanged(SensorEvent event) {
+            int sensorType = event.sensor.getType();
+            switch (sensorType) {
+                case Sensor.TYPE_PROXIMITY:
+                    checkProxEvent(event);
+                    break;
+                case Sensor.TYPE_ACCELEROMETER:
+                    checkAccelEvent(event);
+                    break;
+            }
+        }
+
+        private void checkProxEvent(SensorEvent event) {
             boolean isNear = event.values[0] < mProxSensor.getMaximumRange();
             if (mSawNear && !isNear) {
-                if (shouldPulse(event.timestamp)) {
+                if (isHandWaveGesture(event.timestamp)) {
+                    if (!mHandwaveGestureFlatEnabled) {
+                        launchDozePulse();
+                    } else {
+                        mPulseIfFlat = true;
+                        setAccelEnabled(true);
+                    }
+                } else if (isPocketGesture(event.timestamp)) {
                     launchDozePulse();
                 }
             } else {
@@ -90,23 +116,40 @@ public class CMActionsService extends Service {
             mSawNear = isNear;
         }
 
+        private void checkAccelEvent(SensorEvent event) {
+            if (mPulseIfFlat) {
+                mPulseIfFlat = false;
+
+                // Taken from http://stackoverflow.com/a/15149421
+                float x = event.values[0];
+                float y = event.values[1];
+                float z = event.values[2];
+                float norm = (float) Math.sqrt(x * x + y * y + z * z);
+                z /= norm;
+                int inclination = (int) Math.round(Math.toDegrees(Math.acos(z)));
+
+                if (DEBUG) Log.d(TAG, "Inclination=" + inclination);
+
+                if (inclination < INCLINATION_THS) {
+                    launchDozePulse();
+                }
+            }
+            setAccelEnabled(false);
+        }
+
         @Override
         public void onAccuracyChanged(Sensor sensor, int accuracy) {
             /* Empty */
         }
 
-        private boolean shouldPulse(long timestamp) {
+        private boolean isHandWaveGesture(long timestamp) {
             long delta = timestamp - mInPocketTime;
+            return mHandwaveGestureEnabled && delta < POCKET_DELTA_NS;
+        }
 
-            if (mHandwaveGestureEnabled && mPocketGestureEnabled) {
-                return true;
-            } else if (mHandwaveGestureEnabled) {
-                return delta < POCKET_DELTA_NS;
-            } else if (mPocketGestureEnabled) {
-                return delta >= POCKET_DELTA_NS;
-            }
-
-            return false;
+        private boolean isPocketGesture(long timestamp) {
+            long delta = timestamp - mInPocketTime;
+            return mPocketGestureEnabled && delta >= POCKET_DELTA_NS;
         }
 
         private void setProxEnabled(boolean enable) {
@@ -119,6 +162,19 @@ public class CMActionsService extends Service {
                         SensorManager.SENSOR_DELAY_NORMAL);
             } else {
                 mSensorManager.unregisterListener(this, mProxSensor);
+            }
+        }
+
+        public void setAccelEnabled(boolean enable) {
+            if (mAccelEnabled == enable) {
+                return;
+            }
+            mAccelEnabled = enable;
+            if (enable) {
+                mSensorManager.registerListener(this, mAccelSensor,
+                        SensorManager.SENSOR_DELAY_FASTEST);
+            } else {
+                mSensorManager.unregisterListener(this, mAccelSensor);
             }
         }
     }
@@ -134,6 +190,8 @@ public class CMActionsService extends Service {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(mContext);
         mHandwaveGestureEnabled =
                 sharedPrefs.getBoolean(Constants.PREF_GESTURE_HAND_WAVE_KEY, false);
+        mHandwaveGestureFlatEnabled =
+                sharedPrefs.getBoolean(Constants.PREF_GESTURE_HAND_WAVE_FLAT_KEY, false);
         mPocketGestureEnabled = sharedPrefs.getBoolean(Constants.PREF_GESTURE_POCKET_KEY, false);
         sharedPrefs.registerOnSharedPreferenceChangeListener(mPrefListener);
 
@@ -158,6 +216,7 @@ public class CMActionsService extends Service {
         getContentResolver().unregisterContentObserver(mDozeContentObserver);
         removeScreenStateReceiver();
         mSensor.setProxEnabled(false);
+        mSensor.setAccelEnabled(false);
         holdWakelock(false);
     }
 
@@ -257,6 +316,9 @@ public class CMActionsService extends Service {
                     } else if (Constants.PREF_GESTURE_POCKET_KEY.equals(key)) {
                         mPocketGestureEnabled = sharedPreferences
                                 .getBoolean(Constants.PREF_GESTURE_POCKET_KEY, false);
+                    } else if (Constants.PREF_GESTURE_HAND_WAVE_FLAT_KEY.equals(key)) {
+                        mHandwaveGestureFlatEnabled = sharedPreferences
+                                .getBoolean(Constants.PREF_GESTURE_HAND_WAVE_FLAT_KEY, false);
                     }
 
                     if (areGesturesEnabled()) {
