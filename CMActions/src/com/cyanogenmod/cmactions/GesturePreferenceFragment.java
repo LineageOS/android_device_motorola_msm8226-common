@@ -47,6 +47,12 @@ public class GesturePreferenceFragment extends PreferenceFragment implements
     }
 
     @Override
+    public void onDestroyView() {
+        mSwitchBar.removeOnSwitchChangeListener(this);
+        super.onDestroyView();
+    }
+
+    @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.gesture_panel);
         mPocketPreference = (SwitchPreference) findPreference(Constants.PREF_GESTURE_POCKET_KEY);
