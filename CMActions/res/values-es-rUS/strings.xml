@@ -17,9 +17,9 @@
   <string name="screen_gestures_panel_title">Gestos</string>
   <string name="ambient_display_title">Pantalla ambiente</string>
   <string name="ambient_display_enable_title">Pantalla ambiente</string>
-  <string name="ambient_display_enable_summary">Activar pantalla cuando recibas notificaciones</string>
+  <string name="ambient_display_enable_summary">Encender pantalla al recibir notificaciones</string>
   <string name="hand_wave_gesture_title">Pasar la mano</string>
-  <string name="hand_wave_gesture_summary">Mostrar notificaciones cuando se pase la mano sobre el dispositivo</string>
+  <string name="hand_wave_gesture_summary">Mostrar notificaciones al pasar la mano sobre el dispositivo</string>
   <string name="pocket_gesture_title">Bolsillo</string>
-  <string name="pocket_gesture_summary">Mostrar notificaciones cuando se saque del bolsillo</string>
+  <string name="pocket_gesture_summary">Mostrar notificaciones al sacar del bolsillo</string>
 </resources>

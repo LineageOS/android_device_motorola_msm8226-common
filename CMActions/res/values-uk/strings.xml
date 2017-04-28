@@ -15,8 +15,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Gesture shortcuts -->
   <string name="screen_gestures_panel_title">Жести</string>
-  <string name="ambient_display_title">Індикація подій</string>
-  <string name="ambient_display_enable_title">Індикація подій</string>
+  <string name="ambient_display_title">Ambient дисплей</string>
+  <string name="ambient_display_enable_title">Ambient дисплей</string>
   <string name="ambient_display_enable_summary">Вмикати екран, коли ви отримали сповіщення</string>
   <string name="hand_wave_gesture_title">Жести рукою</string>
   <string name="hand_wave_gesture_summary">Перегляд сповіщень, при проведенні рукою над екраном</string>
