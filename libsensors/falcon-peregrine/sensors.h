@@ -105,7 +105,8 @@ __BEGIN_DECLS
 #define CONVERT_M_Z                 (CONVERT_M)
 
 /* conversion of gyro data to SI units (radian/s) */
-#define CONVERT_G                   ((70.0f / -1000.0f) * ((float)M_PI / 180.0f))
+#define DEG_TO_RAD                  ((float)M_PI / 180.0f)
+#define CONVERT_G                   ((70.0f / -1000.0f) * DEG_TO_RAD)
 #define CONVERT_G_X                 (CONVERT_G)
 #define CONVERT_G_Y                 (CONVERT_G)
 #define CONVERT_G_Z                 (CONVERT_G)
