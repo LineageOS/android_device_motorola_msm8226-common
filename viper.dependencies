@@ -1,0 +1,20 @@
+[
+  {
+    "repository":  "LineageOS/android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "remote":      "github",
+    "branch":      "cm-14.1"
+  },
+  {
+    "repository":  "LineageOS/android_kernel_motorola_msm8226",
+    "target_path": "kernel/motorola/msm8226"
+    "remote":      "github",
+    "branch":      "cm-14.1"
+  },
+  {
+    "repository":  "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings"
+    "remote":      "github",
+    "branch":      "cm-14.1"
+  }
+]
