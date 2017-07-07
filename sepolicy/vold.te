@@ -1,2 +1,1 @@
-allow vold firmware_file:dir search;
-allow vold firmware_file:file r_file_perms;
+r_dir_file(vold, firmware_file)
