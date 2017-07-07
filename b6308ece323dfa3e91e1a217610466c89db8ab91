@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da87b5cf_0d5a4b50",
+        "filename": "sepolicy/vold.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2017-07-07T09:28:02Z",
+      "side": 1,
+      "message": "Is this permission even necessary? It\u0027s vold after all...",
+      "revId": "b6308ece323dfa3e91e1a217610466c89db8ab91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
