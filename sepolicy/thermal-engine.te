@@ -1,4 +1,6 @@
 allow thermal-engine self:capability chown;
-allow thermal-engine socket_device:sock_file { create setattr };
+
+allow thermal-engine socket_device:sock_file create_file_perms;
+
 allow thermal-engine sysfs_battery_supply:dir search;
-allow thermal-engine sysfs_battery_supply:file { open read write };
+allow thermal-engine sysfs_battery_supply:file rw_file_perms;

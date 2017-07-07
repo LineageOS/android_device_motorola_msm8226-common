@@ -9,9 +9,6 @@
 # Camera
 /data/cam_socket([0-9])+                                    u:object_r:camera_socket:s0
 
-# CMHW
-/sys/devices/virtual/timed_output/vibrator/vtg_level        u:object_r:vibeamp_sysfs:s0
-
 # Motorola services
 /data/power_supply_logger(/.*)?                             u:object_r:batt_health_data_file:s0
 /sys/module/qpnp_charger/parameters(/.*)?                   u:object_r:sysfs_batt_health:s0

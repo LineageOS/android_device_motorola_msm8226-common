@@ -1,9 +1,9 @@
 allow mm-qcamerad system_data_file:dir w_dir_perms;
 allow mm-qcamerad system_data_file:file open;
-allow mm-qcamerad system_server:unix_stream_socket { read write };
-allow servicemanager mm-qcamerad:dir search;
-allow servicemanager mm-qcamerad:file { open read };
-allow servicemanager mm-qcamerad:process { getattr };
+
+allow mm-qcamerad system_server:unix_stream_socket rw_socket_perms;
+
 binder_call(mm-qcamerad, servicemanager)
 binder_call(mm-qcamerad, system_server)
+
 unix_socket_connect(mm-qcamerad, mpctl, mpdecision)

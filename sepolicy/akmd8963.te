@@ -2,7 +2,9 @@ type akmd8963, domain;
 type akmd8963_exec, exec_type, file_type;
 init_daemon_domain(akmd8963)
 
-allow akmd8963 sensors_data_file:file { create getattr setattr open read write };
-allow akmd8963 sensors_device:chr_file { open read write ioctl };
-allow akmd8963 system_data_file:dir { write add_name };
+allow akmd8963 sensors_data_file:file create_file_perms;
+allow akmd8963 sensors_device:chr_file rw_file_perms;
+
+allow akmd8963 system_data_file:dir w_dir_perms;
+
 type_transition akmd8963 system_data_file:file sensors_data_file;
