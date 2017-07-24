@@ -14,4 +14,4 @@ allow qti_init_shell blkid_exec:lnk_file r_file_perms;
 # Needed by init.qcom.bt.sh
 allow qti_init_shell bluetooth_data_file:file r_file_perms;
 allow qti_init_shell bluetooth_loader_exec:file r_file_perms;
-allow qti_init_shell hci_attach_dev:chr_file r_file_perms;
+allow qti_init_shell hci_attach_dev:chr_file rw_file_perms;
