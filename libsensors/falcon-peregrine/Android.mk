@@ -35,6 +35,7 @@ LOCAL_SRC_FILES := \
     sensors.cpp \
     SensorBase.cpp \
     LightProxSensor.cpp \
+    AkmSysfs.cpp \
     AccelerometerSensor.cpp \
     CompOriSensor.cpp \
     InputEventReader.cpp
