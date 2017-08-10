@@ -35,6 +35,7 @@ private:
     sensors_event_t mPendingEvents[NUM_SENSORS];
     uint32_t mPendingEventsMask;
     int mPendingEventsFlushCount[NUM_SENSORS];
+    int64_t mDelay[NUM_SENSORS];
 
 public:
             CompOriSensor();

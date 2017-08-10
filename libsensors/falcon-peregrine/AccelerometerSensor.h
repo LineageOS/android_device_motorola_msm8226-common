@@ -66,7 +66,7 @@ private:
     sensors_event_t mPendingEvents[NUM_SENSORS];
     uint32_t mPendingEventsMask;
     int mPendingEventsFlushCount[NUM_SENSORS];
-    void writeAkmAccel(float x, float y, float z);
+    int64_t mAccelDelay;
 
 public:
             AccelerometerSensor();
