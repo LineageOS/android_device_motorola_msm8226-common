@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-#include <fcntl.h>
 #include <string.h>
 #include <cutils/log.h>
 
+#include "AkmSysfs.h"
 #include "CompOriSensor.h"
 
 CompOriSensor::CompOriSensor()
@@ -33,6 +33,7 @@ CompOriSensor::CompOriSensor()
     mPendingEvents[MAG].magnetic.status = SENSOR_STATUS_ACCURACY_HIGH;
     memset(mPendingEvents[MAG].data, 0, sizeof(mPendingEvents[MAG].data));
     mPendingEventsFlushCount[MAG] = 0;
+    mDelay[MAG] = 0;
 
     mEnabled[ORI] = false;
     mPendingEvents[ORI].version = sizeof(sensors_event_t);
@@ -40,6 +41,7 @@ CompOriSensor::CompOriSensor()
     mPendingEvents[ORI].type = SENSOR_TYPE_ORIENTATION;
     memset(mPendingEvents[ORI].data, 0, sizeof(mPendingEvents[ORI].data));
     mPendingEventsFlushCount[ORI] = 0;
+    mDelay[ORI] = 0;
 }
 
 CompOriSensor::~CompOriSensor()
@@ -53,21 +55,18 @@ CompOriSensor::~CompOriSensor()
 
 int CompOriSensor::enable(int32_t handle, int en)
 {
-    char enable_path[PATH_MAX];
     bool enable = !!en;
     int sensor;
-    int fd;
+    int ret;
 
     switch (handle) {
     case ID_M:
         ALOGV("Compass: enable=%d", en);
         sensor = MAG;
-        strcpy(enable_path, "/sys/class/compass/akm8963/enable_mag");
         break;
     case ID_O:
         ALOGV("Orientation: enable=%d", en);
         sensor = ORI;
-        strcpy(enable_path, "/sys/class/compass/akm8963/enable_ori");
         break;
     default:
         ALOGE("CompOriSensor: unknown handle %d", handle);
@@ -77,19 +76,19 @@ int CompOriSensor::enable(int32_t handle, int en)
     if (enable == mEnabled[sensor])
         return 0;
 
-    fd = open(enable_path, O_WRONLY);
-    if (fd < 0) {
-        ALOGE("CompOriSensor: could not open %s: %d", enable_path, fd);
-        return fd;
-    }
-    int ret = write(fd, enable ? "1" : "0", 1);
+    ret = writeAkmEnable(handle, en);
     if (ret < 0) {
-        ALOGE("CompOriSensor: could not set state of handle %d to %d",
-              handle, en);
-        close(fd);
+        ALOGE("CompOriSensor: Could not enable handle=%d\n", handle);
         return ret;
     }
-    close(fd);
+
+    ret = writeAkmDelay(handle, enable ? mDelay[sensor] : 0);
+    if (ret < 0) {
+        ALOGE("CompOriSensor: Could not set delay while enabling handle=%d\n",
+              handle);
+        return ret;
+    }
+
     mEnabled[sensor] = enable;
 
     return 0;
@@ -97,41 +96,29 @@ int CompOriSensor::enable(int32_t handle, int en)
 
 int CompOriSensor::setDelay(int32_t handle, int64_t ns)
 {
-    char delay_path[PATH_MAX];
-    int fd;
+    int sensor;
 
     switch (handle) {
     case ID_M:
         ALOGV("Compass: delay=%lld ns", ns);
-        strcpy(delay_path, "/sys/class/compass/akm8963/delay_mag");
+        sensor = MAG;
         break;
     case ID_O:
         ALOGV("Orientation: delay=%lld ns", ns);
-        strcpy(delay_path, "/sys/class/compass/akm8963/delay_ori");
+        sensor = ORI;
         break;
     default:
         ALOGE("CompOriSensor: unknown handle %d", handle);
         return -EINVAL;
     }
 
-    if (ns < MAG_MIN_DELAY_NS)
-        ns = MAG_MIN_DELAY_NS;
+    mDelay[sensor] = ns;
 
-    fd = open(delay_path, O_WRONLY);
-    if (fd >= 0) {
-        char buf[80];
-        int ret;
-        sprintf(buf, "%lld", ns);
-        ret = write(fd, buf, strlen(buf)+1);
-        if (ret < 0) {
-            ALOGE("CompOriSensor: could not set delay of handle %d to %lld",
-                  handle, ns);
-            return ret;
-        }
-        close(fd);
-        return 0;
+    if (mEnabled[sensor]) {
+        return writeAkmDelay(handle, ns);
     }
-    return fd;
+
+    return 0;
 }
 
 int CompOriSensor::readEvents(sensors_event_t* data, int count)

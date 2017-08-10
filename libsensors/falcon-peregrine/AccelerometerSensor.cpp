@@ -15,18 +15,19 @@
  * limitations under the License.
  */
 
-#include <fcntl.h>
 #include <string.h>
 #include <cutils/log.h>
 
 #include "AccelerometerSensor.h"
+#include "AkmSysfs.h"
 
 AccelerometerSensor::AccelerometerSensor()
     : SensorBase("/dev/lis3dh", "accelerometer"),
       mEnabled(0),
       mOriEnabled(false),
       mInputReader(8),
-      mPendingEventsMask(0)
+      mPendingEventsMask(0),
+      mAccelDelay(0)
 {
     mPendingEvents[ACC].version = sizeof(sensors_event_t);
     mPendingEvents[ACC].sensor = ID_A;
@@ -108,30 +109,11 @@ int AccelerometerSensor::enable(int32_t handle, int en)
     }
     mEnabled = flag;
 
-    return 0;
-}
-
-void AccelerometerSensor::writeAkmAccel(float x, float y, float z)
-{
-    int16_t buf[3];
-    int ret;
-    int fd;
-
-    buf[0] = (int16_t) (x * CONVERT_ACC);
-    buf[1] = (int16_t) (y * CONVERT_ACC);
-    buf[2] = (int16_t) (z * CONVERT_ACC);
-
-    fd = open("/sys/devices/virtual/compass/akm8963/accel", O_WRONLY);
-    if (fd < 0) {
-        ALOGE("Accelerometer: could not open accel file");
-        return;
+    if (handle == ID_A) {
+        writeAkmDelay(handle, enable ? mAccelDelay : 0);
     }
 
-    ret = write(fd, buf, sizeof(buf));
-    if (ret < 0)
-        ALOGE("Accelerometer: could not write accel data");
-
-    close(fd);
+    return 0;
 }
 
 int AccelerometerSensor::setDelay(int32_t handle, int64_t ns)
@@ -172,19 +154,11 @@ int AccelerometerSensor::setDelay(int32_t handle, int64_t ns)
     if (ret < 0)
         ALOGE("Accelerometer: could not set delay: %d", ret);
 
-    fd = open("/sys/class/compass/akm8963/delay_acc", O_WRONLY);
-    if (fd >= 0) {
-        char buf[80];
-        int ret;
-        sprintf(buf, "%lld", ns);
-        ret = write(fd, buf, strlen(buf)+1);
-        if (ret < 0) {
-            ALOGE("AccelerometerSensor: could not write delay_acc");
-            close(fd);
-            return ret;
+    if (handle == ID_A) {
+        mAccelDelay = ns;
+        if (mEnabled & indexToMask(ACC)) {
+            writeAkmDelay(ID_A, ns);
         }
-        close(fd);
-        return 0;
     }
 
     return ret;
