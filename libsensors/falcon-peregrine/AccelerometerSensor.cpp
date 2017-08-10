@@ -124,27 +124,14 @@ int AccelerometerSensor::setDelay(int32_t handle, int64_t ns)
 
     switch (handle) {
     case ID_A:
-        ALOGV("Accelerometer (ACC): delay=%lld", ns);
+        ALOGV("Accelerometer (ACC): delay=%lld ns", ns);
         break;
     case ID_SO:
-        ALOGV("Accelerometer (SO): ignoring delay=%lld", ns);
+        ALOGV("Accelerometer (SO): ignoring delay=%lld ns", ns);
         return 0;
     case ID_SM:
         /* Significant motion sensors should not set any delay */
-        ALOGV("Accelerometer (SM): ignoring delay=%lld", ns);
-        return 0;
-    }
-
-    switch (handle) {
-    case ID_A:
-        ALOGV("Accelerometer (ACC): delay=%d", delay);
-        break;
-    case ID_SO:
-        ALOGV("Accelerometer (SO): delay=%d", delay);
-        return 0;
-    case ID_SM:
-        /* Significant motion sensors should not set any delay */
-        ALOGV("Accelerometer (SM): delay=%d", delay);
+        ALOGV("Accelerometer (SM): ignoring delay=%lld ns", ns);
         return 0;
     }
 
