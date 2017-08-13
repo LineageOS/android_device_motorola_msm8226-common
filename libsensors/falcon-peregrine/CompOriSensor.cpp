@@ -26,12 +26,13 @@ CompOriSensor::CompOriSensor()
       mInputReader(10),
       mPendingEventsMask(0)
 {
+    memset(&mPendingEvents, 0, sizeof(mPendingEvents));
+
     mEnabled[MAG] = false;
     mPendingEvents[MAG].version = sizeof(sensors_event_t);
     mPendingEvents[MAG].sensor = ID_M;
     mPendingEvents[MAG].type = SENSOR_TYPE_MAGNETIC_FIELD;
     mPendingEvents[MAG].magnetic.status = SENSOR_STATUS_ACCURACY_HIGH;
-    memset(mPendingEvents[MAG].data, 0, sizeof(mPendingEvents[MAG].data));
     mPendingEventsFlushCount[MAG] = 0;
     mDelay[MAG] = 0;
 
@@ -39,7 +40,7 @@ CompOriSensor::CompOriSensor()
     mPendingEvents[ORI].version = sizeof(sensors_event_t);
     mPendingEvents[ORI].sensor = ID_O;
     mPendingEvents[ORI].type = SENSOR_TYPE_ORIENTATION;
-    memset(mPendingEvents[ORI].data, 0, sizeof(mPendingEvents[ORI].data));
+    mPendingEvents[ORI].orientation.status = SENSOR_STATUS_ACCURACY_HIGH;
     mPendingEventsFlushCount[ORI] = 0;
     mDelay[ORI] = 0;
 }

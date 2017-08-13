@@ -27,10 +27,12 @@ GyroscopeSensor::GyroscopeSensor()
       mInputReader(4),
       mPendingEventsFlushCount(0)
 {
+    memset(&mPendingEvents, 0, sizeof(mPendingEvents));
+
     mPendingEvents.version = sizeof(sensors_event_t);
     mPendingEvents.sensor = ID_GY;
     mPendingEvents.type = SENSOR_TYPE_GYROSCOPE;
-    memset(mPendingEvents.data, 0, sizeof(mPendingEvents.data));
+    mPendingEvents.gyro.status = SENSOR_STATUS_ACCURACY_HIGH;
 }
 
 GyroscopeSensor::~GyroscopeSensor()

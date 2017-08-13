@@ -29,22 +29,22 @@ AccelerometerSensor::AccelerometerSensor()
       mPendingEventsMask(0),
       mAccelDelay(0)
 {
+    memset(&mPendingEvents, 0, sizeof(mPendingEvents));
+
     mPendingEvents[ACC].version = sizeof(sensors_event_t);
     mPendingEvents[ACC].sensor = ID_A;
     mPendingEvents[ACC].type = SENSOR_TYPE_ACCELEROMETER;
-    memset(mPendingEvents[ACC].data, 0, sizeof(mPendingEvents[ACC].data));
+    mPendingEvents[ACC].acceleration.status = SENSOR_STATUS_ACCURACY_HIGH;
     mPendingEventsFlushCount[ACC] = 0;
 
     mPendingEvents[SO].version = sizeof(sensors_event_t);
     mPendingEvents[SO].sensor = ID_SO;
     mPendingEvents[SO].type = SENSOR_TYPE_SCREEN_ORIENTATION;
-    memset(mPendingEvents[SO].data, 0, sizeof(mPendingEvents[SO].data));
     mPendingEventsFlushCount[SO] = 0;
 
     mPendingEvents[SM].version = sizeof(sensors_event_t);
     mPendingEvents[SM].sensor = ID_SM;
     mPendingEvents[SM].type = SENSOR_TYPE_SIGNIFICANT_MOTION;
-    memset(mPendingEvents[SM].data, 0, sizeof(mPendingEvents[SM].data));
     mPendingEventsFlushCount[SM] = 0;
 }
 

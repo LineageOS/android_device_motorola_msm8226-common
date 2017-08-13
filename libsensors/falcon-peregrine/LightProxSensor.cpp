@@ -26,18 +26,18 @@ LightProxSensor::LightProxSensor()
       mInputReader(4),
       mPendingEventsMask(0)
 {
+    memset(&mPendingEvents, 0, sizeof(mPendingEvents));
+
     mEnabled[LIGHT] = false;
     mPendingEvents[LIGHT].version = sizeof(sensors_event_t);
     mPendingEvents[LIGHT].sensor = ID_L;
     mPendingEvents[LIGHT].type = SENSOR_TYPE_LIGHT;
-    memset(mPendingEvents[LIGHT].data, 0, sizeof(mPendingEvents[LIGHT].data));
     mPendingEventsFlushCount[LIGHT] = 0;
 
     mEnabled[PROX] = false;
     mPendingEvents[PROX].version = sizeof(sensors_event_t);
     mPendingEvents[PROX].sensor = ID_P;
     mPendingEvents[PROX].type = SENSOR_TYPE_PROXIMITY;
-    memset(mPendingEvents[PROX].data, 0, sizeof(mPendingEvents[PROX].data));
     mPendingEventsFlushCount[PROX] = 0;
 }
 
