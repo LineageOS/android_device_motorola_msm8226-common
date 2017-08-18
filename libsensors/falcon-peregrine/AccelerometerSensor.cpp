@@ -36,6 +36,7 @@ AccelerometerSensor::AccelerometerSensor()
     mPendingEvents[ACC].type = SENSOR_TYPE_ACCELEROMETER;
     mPendingEvents[ACC].acceleration.status = SENSOR_STATUS_ACCURACY_HIGH;
     mPendingEventsFlushCount[ACC] = 0;
+    writeAkmDelay(ID_A, -1);
 
     mPendingEvents[SO].version = sizeof(sensors_event_t);
     mPendingEvents[SO].sensor = ID_SO;
@@ -50,8 +51,10 @@ AccelerometerSensor::AccelerometerSensor()
 
 AccelerometerSensor::~AccelerometerSensor()
 {
-    if (mEnabled & MODE_ACCEL)
+    if (mEnabled & MODE_ACCEL) {
+        writeAkmDelay(ID_A, -1);
         enable(ID_A, 0);
+    }
 
     if (mEnabled & MODE_ROTATE)
         enable(ID_SO, 0);
@@ -110,7 +113,7 @@ int AccelerometerSensor::enable(int32_t handle, int en)
     mEnabled = flag;
 
     if (handle == ID_A) {
-        writeAkmDelay(handle, enable ? mAccelDelay : 0);
+        writeAkmDelay(handle, enable ? mAccelDelay : -1);
     }
 
     return 0;

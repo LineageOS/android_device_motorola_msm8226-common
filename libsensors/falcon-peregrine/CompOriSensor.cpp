@@ -28,6 +28,7 @@ CompOriSensor::CompOriSensor()
 {
     memset(&mPendingEvents, 0, sizeof(mPendingEvents));
 
+    writeAkmDelay(ID_M, -1);
     mEnabled[MAG] = false;
     mPendingEvents[MAG].version = sizeof(sensors_event_t);
     mPendingEvents[MAG].sensor = ID_M;
@@ -36,6 +37,7 @@ CompOriSensor::CompOriSensor()
     mPendingEventsFlushCount[MAG] = 0;
     mDelay[MAG] = 0;
 
+    writeAkmDelay(ID_O, -1);
     mEnabled[ORI] = false;
     mPendingEvents[ORI].version = sizeof(sensors_event_t);
     mPendingEvents[ORI].sensor = ID_O;
@@ -47,11 +49,15 @@ CompOriSensor::CompOriSensor()
 
 CompOriSensor::~CompOriSensor()
 {
-    if (mEnabled[MAG])
+    if (mEnabled[MAG]) {
+        writeAkmDelay(ID_M, -1);
         enable(ID_M, 0);
+    }
 
-    if (mEnabled[ORI])
+    if (mEnabled[ORI]) {
+        writeAkmDelay(ID_O, -1);
         enable(ID_O, 0);
+    }
 }
 
 int CompOriSensor::enable(int32_t handle, int en)
@@ -83,7 +89,7 @@ int CompOriSensor::enable(int32_t handle, int en)
         return ret;
     }
 
-    ret = writeAkmDelay(handle, enable ? mDelay[sensor] : 0);
+    ret = writeAkmDelay(handle, enable ? mDelay[sensor] : -1);
     if (ret < 0) {
         ALOGE("CompOriSensor: Could not set delay while enabling handle=%d\n",
               handle);

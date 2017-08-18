@@ -46,7 +46,7 @@ int writeAkmDelay(int32_t handle, int64_t ns)
         return -EINVAL;
     }
 
-    if (ns < MAG_MIN_DELAY_NS) {
+    if (ns >= 0 && ns < MAG_MIN_DELAY_NS) {
         ns = MAG_MIN_DELAY_NS;
     }
 
