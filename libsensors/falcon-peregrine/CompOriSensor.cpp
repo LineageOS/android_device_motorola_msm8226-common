@@ -33,7 +33,6 @@ CompOriSensor::CompOriSensor()
     mPendingEvents[MAG].version = sizeof(sensors_event_t);
     mPendingEvents[MAG].sensor = ID_M;
     mPendingEvents[MAG].type = SENSOR_TYPE_MAGNETIC_FIELD;
-    mPendingEvents[MAG].magnetic.status = SENSOR_STATUS_ACCURACY_HIGH;
     mPendingEventsFlushCount[MAG] = 0;
     mDelay[MAG] = 0;
 
@@ -42,9 +41,19 @@ CompOriSensor::CompOriSensor()
     mPendingEvents[ORI].version = sizeof(sensors_event_t);
     mPendingEvents[ORI].sensor = ID_O;
     mPendingEvents[ORI].type = SENSOR_TYPE_ORIENTATION;
-    mPendingEvents[ORI].orientation.status = SENSOR_STATUS_ACCURACY_HIGH;
     mPendingEventsFlushCount[ORI] = 0;
     mDelay[ORI] = 0;
+
+    // We receive events only if the associated value has changed. The
+    // accuracy changes rarely, so initialize it with the current value.
+    struct input_absinfo absinfo;
+    if (!ioctl(data_fd, EVIOCGABS(EVENT_TYPE_MAGV_STATUS), &absinfo)) {
+        // Compass and orientation sensor have the same accuracy
+        mPendingEvents[MAG].magnetic.status = absinfo.value;
+        mPendingEvents[ORI].orientation.status = absinfo.value;
+    } else {
+        ALOGE("Could not get initial compass accuracy");
+    }
 }
 
 CompOriSensor::~CompOriSensor()
