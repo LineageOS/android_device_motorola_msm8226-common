@@ -109,7 +109,7 @@ int16 AKFS_Start(
 	/* Initialize for AOC */
 	AKFS_InitAOC(&g_prms.m_aocv);
 	/* Initialize magnetic status */
-	g_prms.mi_hstatus = 0;
+	g_prms.mi_hstatus = 1;
 
 	return AKM_SUCCESS;
 }
@@ -234,10 +234,10 @@ int16 AKFS_Get_MAGNETIC_FIELD(
 
 	if (radius > AKFS_GEOMAG_MAX) {
 		g_prms.mi_hstatus = 0;
-	} else {
-		if (aocret) {
-			g_prms.mi_hstatus = 3;
-		}
+	} else if (aocret) {
+		g_prms.mi_hstatus = 3;
+	} else if (g_prms.mi_hstatus == 0) {
+		g_prms.mi_hstatus = 1;
 	}
 
 	*vx = g_prms.mfv_hvec.u.x;
