@@ -99,7 +99,7 @@ __BEGIN_DECLS
 #define CONVERT_O_R                 (CONVERT_O)
 
 /* conversion of magnetic data to uT units */
-#define CONVERT_M                   (0.06f)
+#define CONVERT_M                   (0.01f)
 #define CONVERT_M_X                 (CONVERT_M)
 #define CONVERT_M_Y                 (CONVERT_M)
 #define CONVERT_M_Z                 (CONVERT_M)
