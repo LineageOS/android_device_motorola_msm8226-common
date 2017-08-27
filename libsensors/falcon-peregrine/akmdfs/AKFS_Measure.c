@@ -222,10 +222,6 @@ int16 AKFS_GetInterval(
 			}
 		}
 	}
-#ifdef MAG_MIN_DELAY_NS
-	if (*minimum < MAG_MIN_DELAY_NS)
-		*minimum = MAG_MIN_DELAY_NS;
-#endif
 	return AKM_SUCCESS;
 }
 
