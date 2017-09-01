@@ -482,6 +482,7 @@ service mmi-boot-sh /system/bin/sh /init.mmi.boot.sh
 
 service dump_pds /system/bin/dump_pds.sh
     user root
+    group cache
     disabled
     oneshot
 
