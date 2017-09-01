@@ -188,6 +188,8 @@ on post-fs-data
     chown mot_pwric mot_pwric /sys/module/qpnp_charger/parameters/bms_chrg_capacity
     chown mot_pwric mot_pwric /sys/module/qpnp_charger/parameters/bms_chrg_capacity_temp
     chown mot_pwric mot_pwric /sys/module/qpnp_charger/parameters/chrg_timestamp
+    chown root mot_pwric /sys/class/power_supply/battery/capacity
+    chown root mot_pwric /sys/class/power_supply/battery/status
 
     start batt_health
 
@@ -445,6 +447,7 @@ service audiod /system/bin/audiod
 
 service batt_health /system/bin/batt_health
     class main
+    user mot_pwric
     group mot_pwric
     disabled
 
