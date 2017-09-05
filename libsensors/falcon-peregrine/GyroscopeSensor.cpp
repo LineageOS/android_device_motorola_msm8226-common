@@ -60,6 +60,11 @@ int GyroscopeSensor::enable(int32_t, int en)
     return 0;
 }
 
+bool GyroscopeSensor::hasPendingEvents() const
+{
+    return mPendingEventsFlushCount > 0;
+}
+
 int GyroscopeSensor::setDelay(int32_t, int64_t ns)
 {
     int delay = ns / 1000000;

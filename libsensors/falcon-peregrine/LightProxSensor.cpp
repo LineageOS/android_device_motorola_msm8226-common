@@ -50,6 +50,16 @@ LightProxSensor::~LightProxSensor()
         enable(ID_P, 0);
 }
 
+bool LightProxSensor::hasPendingEvents() const
+{
+    for (int i = 0; i < NUM_SENSORS; i++) {
+        if (mPendingEventsFlushCount[i] > 0) {
+            return true;
+        }
+    }
+    return false;
+}
+
 int LightProxSensor::setDelay(int32_t handle, int64_t ns)
 {
     switch (handle) {

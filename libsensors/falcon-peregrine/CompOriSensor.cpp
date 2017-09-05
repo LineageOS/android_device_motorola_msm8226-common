@@ -137,6 +137,16 @@ int CompOriSensor::setDelay(int32_t handle, int64_t ns)
     return 0;
 }
 
+bool CompOriSensor::hasPendingEvents() const
+{
+    for (int i = 0; i < NUM_SENSORS; i++) {
+        if (mPendingEventsFlushCount[i] > 0) {
+            return true;
+        }
+    }
+    return false;
+}
+
 int CompOriSensor::readEvents(sensors_event_t* data, int count)
 {
     if (count < 1)

@@ -119,6 +119,16 @@ int AccelerometerSensor::enable(int32_t handle, int en)
     return 0;
 }
 
+bool AccelerometerSensor::hasPendingEvents() const
+{
+    for (int i = 0; i < NUM_SENSORS; i++) {
+        if (mPendingEventsFlushCount[i] > 0) {
+            return true;
+        }
+    }
+    return false;
+}
+
 int AccelerometerSensor::setDelay(int32_t handle, int64_t ns)
 {
     int delay = ns / 1000000;
