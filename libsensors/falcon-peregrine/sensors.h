@@ -53,9 +53,9 @@ __BEGIN_DECLS
 
 #define MAG_MIN_DELAY_NS            200000000LL /* nanoseconds */
 
-#define EVENT_TYPE_ACCEL_X          ABS_Y
-#define EVENT_TYPE_ACCEL_Y          ABS_X
-#define EVENT_TYPE_ACCEL_Z          ABS_Z
+#define EVENT_TYPE_ACCEL_X          REL_Y
+#define EVENT_TYPE_ACCEL_Y          REL_X
+#define EVENT_TYPE_ACCEL_Z          REL_Z
 
 #define EVENT_TYPE_SO               MSC_RAW
 
